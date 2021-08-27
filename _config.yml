@@ -17,7 +17,12 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-seo-tag
-  
+  - jekyll-asciidoc
+
+asciidoctor:
+  attributes:
+  - stem
+
 authors:
     sal:
       name:           Sal
@@ -34,7 +39,7 @@ authors:
       bio:            "Blogger, fashionista, love to explore new ideas and write on my morning coffee!"
       email:          fakemail@gmail.com
       twitter:        https://twitter.com/wowthemesnet
- 
+
 # Defaults
 defaults:
 

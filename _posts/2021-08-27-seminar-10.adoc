@@ -1,0 +1,129 @@
+= \(F\) 分布の導出
+shiba <fukuda-makoto-vb@ynu.jp>
+v0.1 2021-08-27
+:title: F分布の導出
+:sectnums:
+:sectnumlevels: 2
+:stem:
+:eqnums: all
+:dummy: {counter2:section:0}
+:example-caption: 例
+
+
+
+== 今回の目標
+:dummy: {counter2:section}
+:num: 0
+
+. ベータ分布の導出
+. ラプラスの継起則
+. F分布の導出
+. t分布の導出
+. t分布の漸近的性質の確認
+
+=== 言葉の確認
+
+* ベータ分布
+* F分布
+* t分布
+
+
+== ベータ分布
+:dummy: {counter2:section}
+:num: 0
+
+一様分布に従う \(n\) 個の独立な確率変数のうち， \(i\) 番目に小さい確率変数 \(X_{(i)}\) はベータ分布 \({\rm Beta}(i, n-i+1)\) に従う．これを一般化してベータ分布 \({\rm Beta}(\alpha, \beta)\) とする．
+\[\notag
+    \begin{align*}
+        \dfrac{x^ {\alpha -1} (1-x) ^{\beta -1}}{{\rm B}(\alpha, \beta)}
+    \end{align*}
+\]
+
+:thm-gamma: 定理 6.1. 
+[#thm_gamma.theorem, title='{thm-gamma}']
+****
+\(X \sim {\rm Ga}(\alpha_x, \beta), Y \sim {\rm Ga}(\alpha_y, \beta), X \mathop{\perp\!\!\!\!\perp} Y\) のとき
+\[\notag
+    \begin{align*}
+        \dfrac{X}{X+Y} \sim {\rm Beta}(\alpha_x + \alpha_y , \beta)
+    \end{align*}
+\]
+
+****
+
+=== ラプラスの継起則
+
+確率 \(p\) を一様分布に従う確率変数だと思う．
+
+== \(F\) 分布
+:dummy: {counter2:section}
+:num: 0
+
+\(X \sim \chi ^2 (m), Y \sim \chi ^2 (n), X \mathop{\perp\!\!\!\!\perp} Y\) のとき
+\[\notag
+    \begin{align*}
+        Z = \dfrac{X/m}{Y/n}
+    \end{align*}
+\]
+の従う分布を \(F\) 分布といい， \(Z \sim F(m,n)\) で表す．
+\[\notag
+    \begin{align*}
+        f_Z(z) = \dfrac{z ^{\frac{m}{2}-1} }{{\rm B}(\frac{1}{2}, \frac{m}{2})} \left(\dfrac{m}{n} \right) ^{\frac{m}{2}}\left( 1 + \dfrac{m}{n} z \right) ^{-\frac{m+n}{2}}
+    \end{align*}
+\]
+
+== \(t\) 分布
+:dummy: {counter2:section}
+:num: 0
+
+\(X \sim N(0,1 ^2), Y \sim \chi ^2 (n), X \mathop{\perp\!\!\!\!\perp} Y\) のとき
+\[\notag
+    \begin{align*}
+        T = \dfrac{X}{\sqrt{Y/n}}
+    \end{align*}
+\]
+の従う分布を自由度 \(n\) の\(t\) 分布といい， \(T \sim t(n)\) とかく．
+\[\notag
+    \begin{align*}
+        f_T (t) = \dfrac{}{\sqrt{n} {\rm B}(\frac{1}{2}, \frac{n}{2})} \left(1 + \dfrac{z^2}{n}\right) ^{-\frac{n+1}{2}}
+    \end{align*}
+\]
+
+=== コーシー分布
+
+\(t(1)\) のこと
+
+
+=== \(t\) 分布の性質
+
+\(n \to \infty\) で正規分布 \(N(0,1 ^2)\) に近づく．
+
+スターリングの公式
+\[\notag
+    \begin{align*}
+        \Gamma (\alpha) \approx \left(\dfrac{\alpha}{e}\right) ^{\alpha} \sqrt{\dfrac{2 \pi}{\alpha}}
+    \end{align*}
+\]
+
+を用いる．
+
+:thm-: 定理 6.2
+[#thm_.theorem, title='{thm-}']
+****
+\(Z \sim t(n)\) のとき \(Z ^2 \sim F(1,n)\)
+****
+
+
+NOTE: 問題6.4 は誤植？
+
+
+
+[bibliography]
+== 参考文献
+* [[[ref:kuroki,Kuroki]]] 黒木学. 数理統計学&#8212;統計的推論の基礎&#8212; . 初版, 東京, 共立出版株式会社, 2020, 246p., ISBN 978-4-320-11429-6. 
+
+
+////
+* [[[ref:seki, Seki]]]  赤摂也．確率論入門．初版, 東京, 培風館, 1963, 214p., ISBN 978-4563003142
+* [Sinai] Yakov G. Sinai著, 森真訳. シナイ確率論入門コース. 東京, 丸善出版株式会社, 2012, 225p., ISBN 978-4-621-06298-2
+////
