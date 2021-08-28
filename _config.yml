@@ -40,8 +40,8 @@ defaults:
       path: "_posts"
     values:
       layout: post
-      author: sal
-      avatar: /assets/images/avatar1.jpg
+      author: shiba
+      avatar: /assets/images/avatar.jpg
       
   # all pages
   - scope:
@@ -49,6 +49,15 @@ defaults:
     values:
       layout: page
       
+
+  - scope:
+      path: "_Blog"
+    values:
+      layout: post
+      author: shiba
+      avatar: /assets/images/avatar.jpg
+      draft: true
+
 # Syntax
 markdown: kramdown
 highlighter: rouge
