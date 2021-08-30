@@ -18,6 +18,7 @@ plugins:
   - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-asciidoc
+  - jekyll-twitter-plugin
 
 asciidoctor:
   attributes:

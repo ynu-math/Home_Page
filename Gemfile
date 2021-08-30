@@ -17,5 +17,6 @@ group :jekyll_plugins do
     gem 'jekyll-seo-tag'
     gem 'jekyll-asciidoc'
     gem 'jekyll-archives'
+    gem 'jekyll-twitter-plugin'
     gem "jekyll", github: "jekyll/jekyll"
 end
