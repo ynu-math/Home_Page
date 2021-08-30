@@ -1,130 +1,136 @@
 ---
 layout: post
-title:  "F-distribution"
-author: shiba
+title:  ""
 categories: [ Statistics ]
 tags: ["probability distribution",]
 image: assets/images/demo1.jpg
 ---
+= F-distribution
+shiba
 :sectnums:
 :sectnumlevels: 2
-:stem:
-:eqnums: all
 :dummy: {counter2:section:0}
 :example-caption: 例
 
 
+== F-distribution
 
-== 今回の目標
-:dummy: {counter2:section}
-:num: 0
+F-distribution arises frequently in statistics. Many people uses this probability distribution, but most of them don't know how this is deduced. In this article, I will show how to calculate the density function of F-distribution.
 
-. ベータ分布の導出
-. ラプラスの継起則
-. F分布の導出
-. t分布の導出
-. t分布の漸近的性質の確認
+== How to calculate
 
-=== 言葉の確認
-
-* ベータ分布
-* F分布
-* t分布
-
-
-== ベータ分布
-:dummy: {counter2:section}
-:num: 0
-
-一様分布に従う \(n\) 個の独立な確率変数のうち， \(i\) 番目に小さい確率変数 \(X_{(i)}\) はベータ分布 \({\rm Beta}(i, n-i+1)\) に従う．これを一般化してベータ分布 \({\rm Beta}(\alpha, \beta)\) とする．
+Where \(X, Y\) are both independent probability functions such that  \(X \sim \chi ^2 (m), Y \sim \chi ^2 (n)\), the probability function
 \[\notag
     \begin{align*}
-        \dfrac{x^ {\alpha -1} (1-x) ^{\beta -1}}{{\rm B}(\alpha, \beta)}
+        Z = \dfrac{X / m}{Y / n}
+    \end{align*}
+\]
+follows F-distribution with \((m,n)\) degrees of freedom.
+
+The density functions of \(X, Y\) are
+\[\notag
+    \begin{align*}
+        f_X(x) = \dfrac{1}{{\rm \Gamma}(\frac{m}{2}) 2 ^{\frac{m}{2}}} x ^{\frac{m}{2}-1} e^{-\frac{x}{2}}\\
+        f_Y(y) = \dfrac{1}{{\rm \Gamma}(\frac{n}{2}) 2 ^{\frac{n}{2}}} y ^{\frac{n}{2}-1} e^{-\frac{y}{2}}\\
     \end{align*}
 \]
 
-:thm-gamma: 定理 6.1. 
-[#thm_gamma.theorem, title='{thm-gamma}']
-****
-\(X \sim {\rm Ga}(\alpha_x, \beta), Y \sim {\rm Ga}(\alpha_y, \beta), X \mathop{\perp\!\!\!\!\perp} Y\) のとき
+Because \(X, Y\) are independent, the joint probability density function of \(X, Y\) is
 \[\notag
     \begin{align*}
-        \dfrac{X}{X+Y} \sim {\rm Beta}(\alpha_x + \alpha_y , \beta)
+        f_{X,Y}(x,y) &= f_X(x) f_Y(y)\\
+                    &= \dfrac{1}{{\rm \Gamma}(\frac{m}{2}) 2 ^{\frac{m}{2}}} x ^{\frac{m}{2}-1} e^{-\frac{x}{2}} \dfrac{1}{{\rm \Gamma}(\frac{n}{2}) 2 ^{\frac{n}{2}}} y ^{\frac{n}{2}-1} e^{-\frac{y}{2}}\\
+                    &=  \dfrac{1}{{\rm \Gamma}(\frac{m}{2}) {\rm \Gamma}(\frac{n}{2}) 2 ^{\frac{m+n}{2}}} x ^{\frac{m}{2}-1}  y ^{\frac{n}{2}-1} e^{-\frac{x + y}{2}}\\
+                    &= \dfrac{1}{ {\rm B}(\frac{m}{2}, \frac{n}{2}) {\rm \Gamma}(\frac{m+n}{2}) 2 ^{\frac{m+n}{2}}} x ^{\frac{m}{2}-1}  y ^{\frac{n}{2}-1} e^{-\frac{x + y}{2}}
     \end{align*}
 \]
 
-****
-
-=== ラプラスの継起則
-
-確率 \(p\) を一様分布に従う確率変数だと思う．
-
-== \(F\) 分布
-:dummy: {counter2:section}
-:num: 0
-
-\(X \sim \chi ^2 (m), Y \sim \chi ^2 (n), X \mathop{\perp\!\!\!\!\perp} Y\) のとき
-\[\notag
-    \begin{align*}
-        Z = \dfrac{X/m}{Y/n}
-    \end{align*}
-\]
-の従う分布を \(F\) 分布といい， \(Z \sim F(m,n)\) で表す．
-\[\notag
-    \begin{align*}
-        f_Z(z) = \dfrac{z ^{\frac{m}{2}-1} }{{\rm B}(\frac{1}{2}, \frac{m}{2})} \left(\dfrac{m}{n} \right) ^{\frac{m}{2}}\left( 1 + \dfrac{m}{n} z \right) ^{-\frac{m+n}{2}}
-    \end{align*}
+When we transform \(X, Y\) as follows;
+\[
+    \begin{align}
+        Z = \dfrac{X / m}{Y / n}, \quad W = Y, \label{z-w}
+    \end{align}
 \]
 
-== \(t\) 分布
-:dummy: {counter2:section}
-:num: 0
-
-\(X \sim N(0,1 ^2), Y \sim \chi ^2 (n), X \mathop{\perp\!\!\!\!\perp} Y\) のとき
+then, the joint distribution function of \(Z, W\) is
 \[\notag
     \begin{align*}
-        T = \dfrac{X}{\sqrt{Y/n}}
+        f_{Z,W}(z,w) &= f_{X,Y} \left(z, w \right) \left|J_{x,y}(z,w)\right| 
     \end{align*}
 \]
-の従う分布を自由度 \(n\) の\(t\) 分布といい， \(T \sim t(n)\) とかく．
+where \(J_{x,y}(z,w)\) is Jacobian of the transform from \((X,Y)\) to \((Z, W)\).
+
+Because \((\ref{z-w})\),
 \[\notag
     \begin{align*}
-        f_T (t) = \dfrac{}{\sqrt{n} {\rm B}(\frac{1}{2}, \frac{n}{2})} \left(1 + \dfrac{z^2}{n}\right) ^{-\frac{n+1}{2}}
+        X = \dfrac{m}{n}ZW, \quad Y = W,
+    \end{align*}
+\]
+\[\notag
+    \begin{align*}
+        J_{x,y} (z,w) = \begin{vmatrix}
+\dfrac{\partial x}{\partial z} & \dfrac{\partial x}{\partial w} \\
+\dfrac{\partial y}{\partial z} & \dfrac{\partial y}{\partial w} 
+\end{vmatrix} = \begin{vmatrix}
+\dfrac{m}{n}w & 0 \\
+\dfrac{\partial y}{\partial z} & 1 \\
+\end{vmatrix} = \dfrac{m}{n}w.
     \end{align*}
 \]
 
-=== コーシー分布
-
-\(t(1)\) のこと
-
-
-=== \(t\) 分布の性質
-
-\(n \to \infty\) で正規分布 \(N(0,1 ^2)\) に近づく．
-
-スターリングの公式
+Thus,
 \[\notag
     \begin{align*}
-        \Gamma (\alpha) \approx \left(\dfrac{\alpha}{e}\right) ^{\alpha} \sqrt{\dfrac{2 \pi}{\alpha}}
+        f_{Z,W}(z,w) &=\dfrac{1}{ {\rm B}(\frac{m}{2}, \frac{n}{2}) {\rm \Gamma}(\frac{m+n}{2}) 2 ^{\frac{m+n}{2}}} \left(\dfrac{m}{n}zw\right) ^{\frac{m}{2}-1}  w ^{\frac{n}{2}-1} e^{-\frac{1}{2}\left(\frac{m}{n}zw + w\right)} \dfrac{m}{n}w\\
+        &= \dfrac{z^{\frac{m}{2}-1}}{ {\rm B}(\frac{m}{2}, \frac{n}{2})}\left(\dfrac{m}{n}\right) ^{\frac{m}{2}}\dfrac{1}{ {\rm \Gamma}(\frac{m+n}{2}) 2 ^{\frac{m+n}{2}}}   w ^{\frac{m+n}{2}-1} e^{-\frac{w}{2}\left(1+\frac{m}{n}z\right)} 
     \end{align*}
 \]
 
-を用いる．
+When we tarnsform \(Z, W\) as follows;
+\[\notag
+    \begin{align*}
+        U = Z, \quad V = W\left(1+\dfrac{m}{n}Z\right)
+    \end{align*}
+\]
+then,
+\[\notag
+    \begin{align*}
+        Z = U, \quad W = \dfrac{V}{\left(1+\dfrac{m}{n}U\right)}
+    \end{align*}
+\]
+So,
+\[\notag
+    \begin{align*}
+        J_{z,w}(u,v) = \begin{vmatrix}
+\dfrac{\partial z}{\partial u} & \dfrac{\partial z}{\partial v} \\
+\dfrac{\partial w}{\partial u} & \dfrac{\partial w}{\partial v} 
+\end{vmatrix} = \begin{vmatrix}
+1 & 0 \\
+\dfrac{\partial y}{\partial z} & \dfrac{1}{\left(1+\dfrac{m}{n}u\right)} \\
+\end{vmatrix} = \dfrac{1}{\left(1+\dfrac{m}{n}u\right)}.
+    \end{align*}
+\]
 
-:thm-: 定理 6.2
-[#thm_.theorem, title='{thm-}']
-****
-\(Z \sim t(n)\) のとき \(Z ^2 \sim F(1,n)\)
-****
+Thus,
+\[\notag
+    \begin{align*}
+        f_{U, V}(u,v) &= \dfrac{u^{\frac{m}{2}-1}}{ {\rm B}(\frac{m}{2}, \frac{n}{2})}\left(\dfrac{m}{n}\right) ^{\frac{m}{2}} \dfrac{1}{ {\rm \Gamma}(\frac{m+n}{2}) 2 ^{\frac{m+n}{2}}}   \left\{\dfrac{v}{\left(1+\dfrac{m}{n}u\right)}\right\} ^{\frac{m+n}{2}-1} e^{-v} \dfrac{1}{\left(1+\dfrac{m}{n}u\right)}\\
+        &=\dfrac{u^{\frac{m}{2}-1}}{ {\rm B}(\frac{m}{2}, \frac{n}{2})}\left(\dfrac{m}{n}\right) ^{\frac{m}{2}} \dfrac{1}{\left(1+\dfrac{m}{n}u\right) ^{\frac{m+n}{2}}} \dfrac{1}{ {\rm \Gamma}(\frac{m+n}{2}) 2 ^{\frac{m+n}{2}}}  v ^{\frac{m+n}{2}-1} e^{-v} \\
+        &= \dfrac{m^{\frac{m}{2}} n^{\frac{n}{2}}}{ {\rm B}(\frac{m}{2}, \frac{n}{2})} \dfrac{u^{\frac{m}{2}-1} }{\left(n+mu\right) ^{\frac{m+n}{2}}} \dfrac{1}{ {\rm \Gamma}(\frac{m+n}{2}) 2 ^{\frac{m+n}{2}}}  v ^{\frac{m+n}{2}-1} e^{-v}
+    \end{align*}
+\]
 
+From the shape of the probability density function above, it sees that \(U, V\) is independent and \(V\) follows Beta-distribution with degree of \(\left(\dfrac{m+n}{2}, 2\right)\).
 
-NOTE: 問題6.4 は誤植？
+So, marginal probability density function of \(U\left(= Z = \dfrac{X / m}{Y / n}\right)\) is
+\[\notag
+    \begin{align*}
+        f_U(u) = \dfrac{m^{\frac{m}{2}} n^{\frac{n}{2}}}{ {\rm B}(\frac{m}{2}, \frac{n}{2})} \dfrac{u^{\frac{m}{2}-1} }{\left(n+mu\right) ^{\frac{m+n}{2}}}
+    \end{align*}
+\]
 
+This is the probability density function of F-distribution with degree of \((m, n)\).
 
-
-[bibliography]
-== 参考文献
-* [[[ref:kuroki,Kuroki]]] 黒木学. 数理統計学&#8212;統計的推論の基礎&#8212; . 初版, 東京, 共立出版株式会社, 2020, 246p., ISBN 978-4-320-11429-6. 
 
 
 ////
