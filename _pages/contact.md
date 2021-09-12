@@ -3,7 +3,7 @@ title: "Contact"
 permalink: "/contact.html"
 ---
 
-<form action="https://formspree.io/f/xjvjjbdy" method="POST">    
+<form action="https://formspree.io/f/mayavwgd" method="POST">    
 <p class="mb-4">{{site.name}} にお気軽にご連絡してください．可能な限り早く返信いたします．</p>
 <div class="form-group row">
 <div class="col-md-6">
