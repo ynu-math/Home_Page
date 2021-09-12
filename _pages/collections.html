@@ -11,7 +11,9 @@ permalink: "/collections.html"
             
         {% for category in site.categories %}
 
-        {% comments %}  [1][1]は変更する必要が出てくる可能性がある． {% endcomments %}
+        {% comment %}
+          以下の文はカテゴリの1つ目のpostのtagsに"議事録"という文字列が含まれたらそのカテゴリを列挙するのをスキップすることを表す．[1][1]という部分の左の1は変更できない．バグが生じたら右の1を2や3に変更することを試してみてほしい．
+        {% endcomment %}
 
 
         {% if category[1][1].tags contains "議事録" %}{% continue %}{% else %}
