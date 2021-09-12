@@ -1,4 +1,4 @@
-= なんすかしゃぞうーって
+= なんすか しゃぞうーって
 :page-author: shiba
 :page-layout: post
 :page-categories:  [ ""]

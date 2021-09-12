@@ -33,6 +33,14 @@ authors:
       email:          shiba.dog.leo.private@gmail.com
       twitter:        https://twitter.com/shiba_dog_leo
 
+    zab:
+      name:           zab
+      site:           
+      avatar:         /assets/images/zab.jpg
+      bio:            ""
+      email:          
+      twitter:        
+
 # Defaults
 defaults:
 

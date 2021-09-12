@@ -1,7 +1,7 @@
 = 運営方針議会2021
 :page-author: zab
 :page-layout: post
-:page-categories:  [ "Analysis_II_2021"]
+:page-categories:  [ "General"]
 :page-tags: ["議事録"]
 :page-image: assets/images/logo.png
 :page-permalink: General/meeting-04
