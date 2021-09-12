@@ -1,0 +1,24 @@
+= ミーティング第4回
+:page-author: shiba
+:page-layout: post
+:page-categories:  [ "Analysis_I_Solution"]
+:page-tags: ["議事録"]
+:page-image: assets/images/logo.png
+:page-permalink: Analysis_I_Solution/meeting-04
+:sectnums:
+:sectnumlevels: 2
+:dummy: {counter2:section:0}
+
+## 時間
+
+10:00-12:00
+
+## 参加者
+
+- zab
+- 柴犬レオ
+- 温州ミカン
+
+## やったこと
+
+問題8.2.5,2.2.5

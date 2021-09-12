@@ -1,0 +1,36 @@
+= ゼミ第9回
+:page-author: shiba
+:page-layout: post
+:page-categories:  [ "Linear_Algebra_2021"]
+:page-tags: ["議事録"]
+:page-image: assets/images/Linear_Algebra.png
+:page-permalink: Linear_Algebra_2021/seminar-09
+:sectnums:
+:sectnumlevels: 2
+:dummy: {counter2:section:0}
+
+
+== 時間
+
+10:00-14:40
+
+== 参加者
+
+* サカモト
+* 山城
+* nodomi
+
+== 発表
+
+* 第5章 6-10節 山城
+
+
+
+== 話し合い
+
+
+
+== 次回の範囲
+
+* サカモト 第6章
+

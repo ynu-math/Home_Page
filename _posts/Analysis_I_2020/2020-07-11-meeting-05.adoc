@@ -1,0 +1,39 @@
+= ミーティング第5回
+:page-author: shiba
+:page-layout: post
+:page-categories:  [ "Analysis_I_2020"]
+:page-tags: ["議事録"]
+:page-image: assets/images/logo.png
+:page-permalink: Analysis_I_2020/meeting-05
+:sectnums:
+:sectnumlevels: 2
+:dummy: {counter2:section:0}
+
+
+## 時間
+
+10:00-13:00
+
+## 参加者
+
+- 柴犬レオ
+- 温州ミカン
+- Zab
+
+## 決まったこと
+
+- ゼミの担当範囲は4小節前後
+- 一人の発表時間は25分
+- 開始は2020/07/18から
+- 画面を録画して動画を公開する
+
+## 次回やること
+
+- ゼミ発表
+  - Zab:1.1.A-1.1.D
+  - 柴犬レオ:1.1.E-1.2.A
+  - 温州ミカン:1.2.B-1.2.D
+
+## 次回までにやること
+
+発表の準備,教科書の理解

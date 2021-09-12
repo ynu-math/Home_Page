@@ -1,0 +1,36 @@
+= ゼミ第9回
+:page-author: shiba
+:page-layout: post
+:page-categories:  [ "Analysis_I_2020"]
+:page-tags: ["議事録"]
+:page-image: assets/images/Analysis_I.png
+:page-permalink: Analysis_I_2020/seminar-09
+:sectnums:
+:sectnumlevels: 2
+:dummy: {counter2:section:0}
+
+## 時間
+
+10:00-13:00
+
+## 参加者
+
+- zab
+- 柴犬レオ
+- 温州ミカン
+
+## やったこと
+
+- ゼミ発表
+  - 温州ミカン:1.D-5.3.C
+
+## 次回の範囲
+
+- ゼミ発表
+  - zab:6.1.A-6.2.D
+
+## 決まったこと
+
+- 三角関数のグラフ，複素数の図形的解釈はとばします．
+- 9/29はミーティングのみです．
+- 範囲を広げたことでよかった点，悪かった点を考えておいてください．

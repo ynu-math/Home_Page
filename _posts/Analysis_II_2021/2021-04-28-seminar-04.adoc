@@ -1,0 +1,38 @@
+= ゼミ第4回
+:page-author: shiba
+:page-layout: post
+:page-categories:  [ "Analysis_II_2021"]
+:page-tags: ["議事録"]
+:page-image: assets/images/Analysis_II.png
+:page-permalink: Analysis_II_2021/seminar-04
+:sectnums:
+:sectnumlevels: 2
+:dummy: {counter2:section:0}
+
+
+## 時間
+
+18:30- 19:30
+
+## 参加者
+
+- zab
+- 柴犬レオ
+- サカモト
+
+## 発表範囲
+
+- 柴犬レオ
+  - 13.1 関数列の収束について，
+    点別収束と一様収束の違いを確認した．
+- サカモト
+  - 定積分の置換積分法において，変数変換の形は，被積分関数が有理関数になるように選ぶ．
+## 次回の範囲
+
+- 温州ミカン
+  - 13章 ストーン・ワイエルシュトラスの定理
+
+## 反省
+
+- 柴犬レオ
+    温州ミカンさんが急遽都合が悪くなったとのことで代講しましたが，全く理解できていませんでした．

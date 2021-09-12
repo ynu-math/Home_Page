@@ -1,0 +1,22 @@
+= なんすかしゃぞうーって
+:page-author: shiba
+:page-layout: post
+:page-categories:  [ ""]
+:page-tags: ["featured", "論理学", "集合論", "基礎論 "]
+:page-image: https://livedoor.blogimg.jp/shune4312/imgs/4/b/4b20bd29.png
+:page-permalink: define-map
+:sectnums:
+:sectnumlevels: 2
+:dummy: {counter2:section:0}
+:page-draft: true
+== 要約
+
+集合\(X(\not = \varnothing)\)から集合\(Y(\not = \varnothing)\)への**写像**とは，\(X\)と\(Y\)の二項関係\((X,Y,G)\)で
+
+\[\notag
+    \begin{align*}
+        \forall x \in X ~ \exists y \in Y ~ \left[(x, y) \in G \land \forall z \in Y [~ (x, z) \in G \rightarrow z = y ~]\right]
+    \end{align*}
+\]
+
+を満たすものをいう.
