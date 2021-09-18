@@ -5,6 +5,7 @@
 :page-tags: ["featured"]
 :page-image: assets/images/low-degree-linear-subspace.png
 :page-permalink: low-degree-linear-subspace
+:stem:
 :sectnums:
 :sectnumlevels: 2
 :dummy: {counter2:section:0}
@@ -29,13 +30,15 @@
 
 \(2 \times 2\) 行列\(A\) を \(A = (u, v)\) とする．\(u, v\) が一次独立だとすると\(A ^{-1}\) が存在する． 
 
-ここで，\(w \in W\) のとき \(A ^{-1} w \in W\) である．なぜならば
-
-任意の \(\displaystyle \begin{pmatrix}
+ここで，任意の \(\displaystyle \begin{pmatrix}
 x  \\
 y  \\
 \end{pmatrix}
-\in R ^2 \) に対し
+\in R ^2 \) に対し\(\displaystyle A \begin{pmatrix}
+x  \\
+y  \\
+\end{pmatrix}  \in W \)である．なぜならば
+
 \[
     \begin{align}
         A \begin{pmatrix}
@@ -43,17 +46,6 @@ x  \\
 y  \\
 \end{pmatrix} = xu + yv \in W \label{f}
     \end{align}
-\]
-
-だから，\((\ref{f})\) で \(\displaystyle \begin{pmatrix}
-x  \\
-y  \\
-\end{pmatrix} = A ^{-1} w \) とおけば
-
-\[\notag
-    \begin{align*}
-        A \left( A ^{-1} w \right) = w \in W
-    \end{align*}
 \]
 
 だからである．
