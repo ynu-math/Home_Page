@@ -4,7 +4,7 @@
 :page-categories:  [ "テクノロジー"]
 :page-tags: ["featured","Asciidoc"]
 :page-image: assets/images/syntax-sample.png
-:page-permalink: syntax-sample
+:page-permalink: Articles/syntax-sample
 :sectnums:
 :sectnumlevels: 2
 :dummy: {counter2:section:0}

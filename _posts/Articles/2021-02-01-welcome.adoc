@@ -3,8 +3,8 @@
 :page-layout: post
 :page-categories:  [ ""]
 :page-tags: ["sticky"]
-:page-image: assets/images/logo.png
-:page-permalink: welcome
+:page-image: assets/images/logo.jpg
+:page-permalink: Articles/welcome
 :sectnums:
 :sectnumlevels: 2
 :dummy: {counter2:section:0}

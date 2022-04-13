@@ -4,7 +4,7 @@
 :page-categories:  ["解析学"]
 :page-tags: ["featured", "位相空間論"]
 :page-image: https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Open_set_-_example.png/800px-Open_set_-_example.png
-:page-permalink: define-cont
+:page-permalink: Articles/define-cont
 :sectnums:
 :sectnumlevels: 2
 :dummy: {counter2:section:0}

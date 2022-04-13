@@ -4,7 +4,7 @@
 :page-categories:  ["解析学"]
 :page-tags: ["featured", "複素関数論"]
 :page-image: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Fresnel_integrals.svg/600px-Fresnel_integrals.svg.png
-:page-permalink: generalize-fresnel-integral
+:page-permalink: Articles/generalize-fresnel-integral
 :sectnums:
 :sectnumlevels: 2
 :dummy: {counter2:section:0}

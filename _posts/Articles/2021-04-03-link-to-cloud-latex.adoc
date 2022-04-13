@@ -4,7 +4,7 @@
 :page-categories:  [ "テクノロジー"]
 :page-tags: ["featured", "VSCode", "LaTeX"]
 :page-image: assets/images/cloud-latex-header.png
-:page-permalink: link-to-cloud-latex
+:page-permalink: Articles/link-to-cloud-latex
 :dummy: {counter2:section:0}
 
 == 要約

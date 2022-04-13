@@ -1,10 +1,10 @@
 = 低次元の線型部分空間
 :page-author: shiba
 :page-layout: post
-:page-categories:  [ "Linear_Algebra_2021"]
+:page-categories:  [ "Linear_Algebra_2021", "Articles"]
 :page-tags: ["featured"]
 :page-image: assets/images/low-degree-linear-subspace.png
-:page-permalink: low-degree-linear-subspace
+:page-permalink: Articles/low-degree-linear-subspace
 :stem:
 :sectnums:
 :sectnumlevels: 2

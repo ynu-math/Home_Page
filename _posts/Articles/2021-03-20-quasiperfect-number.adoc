@@ -1,10 +1,10 @@
 = 準完全数と概完全数
 :page-author: orange
 :page-layout: post
-:page-categories:  [ "整数論"]
+:page-categories:  [" 整数論"]
 :page-tags: ["featured"]
 :page-image: https://upload.wikimedia.org/wikipedia/commons/4/4e/28_is_a_perfect_number.jpg
-:page-permalink: quasiperfect-number
+:page-permalink: Articles/quasiperfect-number
 :sectnums:
 :sectnumlevels: 2
 :dummy: {counter2:section:0}
@@ -17,7 +17,7 @@
 == 完全数
 
 **概完全数と準完全数は完全数に近い概念であるので、最初に完全数について触れておくことにする。**  
-  
+
 **完全数**とは名称を与えられた自然数の中でも特に興味深いものとされており、例として次のように定義される。
 
 ****

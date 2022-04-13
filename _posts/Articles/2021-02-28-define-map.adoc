@@ -1,10 +1,10 @@
 = なんすか しゃぞうーって
 :page-author: shiba
 :page-layout: post
-:page-categories:  [ ""]
+:page-categories:  [""]
 :page-tags: ["featured", "論理学", "集合論", "基礎論 "]
 :page-image: https://livedoor.blogimg.jp/shune4312/imgs/4/b/4b20bd29.png
-:page-permalink: define-map
+:page-permalink: Articles/define-map
 :sectnums:
 :sectnumlevels: 2
 :dummy: {counter2:section:0}
