@@ -64,7 +64,8 @@ a:hover, a:focus { color: #4183c4; }
 a img { border: none; }
 
 /* Default paragraph styles */
-p { font-family: helvetica, arial, freesans, clean, sans-serif; font-weight: normal; font-size: 1em; line-height: 1.4; margin-bottom: 1em; text-rendering: optimizeLegibility; }
+p { font-family: "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", helvetica, arial, freesans, clean, sans-serif; font-weight: normal; font-size: 1em; line-height: 1.4; margin-bottom: 1em; text-rendering: optimizeLegibility; }
 p aside { font-size: 0.93333em; line-height: 1.35; font-style: italic; }
 
 /* Default header styles */
@@ -137,8 +138,8 @@ blockquote, blockquote p { line-height: 1.4; color: #666666; }
 
 @media only screen and (min-width: 768px) { h1, h2, h3, #toctitle, .sidebarblock > .content > .title, h4, h5, h6 { line-height: 1.4; }
   h1 { font-size: 2em; }
-  h2 { font-size: 1.6em; }
-  h3, #toctitle, .sidebarblock > .content > .title { font-size: 1.2em; }
+  h2 { font-size: 1.3em; }
+  h3, #toctitle, .sidebarblock > .content > .title { font-size: 1.1em; }
   h4 { font-size: 1em; } }
 /* Print styles.  Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/ Credit to Paul Irish and HTML5 Boilerplate (html5boilerplate.com)
 */
@@ -587,12 +588,13 @@ img {
 a,a:hover {
 	transition:all .2s;
 	text-decoration:none;
+	color:lightsteelblue;
 }
 a {
-	color:#03a87c;
+	color:steelblue;
 }
 a.text-dark:hover {
-	color:#03a87c !important;
+	color:lightsteelblue !important;
 }
 .c-pointer:hover {
 	cursor:pointer;
@@ -640,6 +642,10 @@ a.text-dark:hover {
 	border-radius:30px !important;
 }
 .btn {
+	margin-left: 3px;
+	margin-right: 3px;
+	margin-top: 4px;
+	margin-bottom: 4px;
 	padding:0.35rem 1.1rem;
 	font-size:1rem;
 	line-height:1.6;
@@ -761,7 +767,7 @@ a.text-dark:hover {
 	color:#fff !important;
 }
 .navbar-brand {
-	margin-right:2rem;
+
 	font-size:1.55rem;
     font-family:"Georgia","Times New Roman",serif;
 }
@@ -1191,6 +1197,18 @@ ol.list-featured li:before {
     line-height: 1;
     opacity: .1;
 }
+ol.list-featured-activity {
+	counter-reset:my-awesome-counter;
+	list-style:none;
+	padding-left:20px;
+	margin-left: 20px;
+}
+ol.list-featured-activity li {
+	counter-increment:my-awesome-counter;
+	display:flex;
+	font-size:0.8rem;
+}
+
 .catlist .sep:last-child {
 	display:none;
 }
@@ -1215,6 +1233,8 @@ article {
     font-family:Lora;
 }
 .article-headline {
+	text-align: center;
+	padding-top: 1rem;
     font-family: Georgia,Times,"Times New Roman",serif;
     font-size: 3.2rem;
     font-weight: 400;
@@ -1276,6 +1296,16 @@ article h1,article h2,article h3,article h4,article h5,article h6,article .h1,ar
 }
 .spanborder span {
 	border-bottom:1px solid rgba(0,0,0,0.44);
+	display:inline-block;
+	padding-bottom:20px;
+	margin-bottom:-1px;
+}
+.spanborder-cyan {
+	border-bottom:1px solid #e8f3ec;
+	margin-bottom:2rem;
+}
+.spanborder-cyan span {
+	border-bottom:1px solid #325D72;
 	display:inline-block;
 	padding-bottom:20px;
 	margin-bottom:-1px;
@@ -1359,7 +1389,7 @@ div.a2a_full_footer {display:none;}
 		 font-size: 1.1rem; 
 	 }
 	 article {
-		 font-size:1.24rem;
+		
 	 }
 	 .topfirstimage {
 		 height:280px !Important;

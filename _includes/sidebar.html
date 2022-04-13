@@ -1,7 +1,41 @@
-<h5 class="mb-3">Mundana Jekyll Theme</h5>
 
-<p>Hi! The website you are previewing is a demonstration for Mundana Jekyll theme, hosted on Github, made by <a href="https://www.wowthemes.net/donate/">Sal</a>.</p>
 
-<a target="_blank" href="https://www.wowthemes.net/mundana-jekyll-theme/" class="btn btn-warning d-block mb-2"><i class="fa fa-file"></i> Documentation</a>
-
-<a target="_blank" class="btn btn-danger d-block" href="https://www.wowthemes.net/donate/"><i class="fa fa-coffee"></i> Buy me a coffee</a> 
+<nav class="sidebar" style="padding-top: 56px;">
+    <!-- close sidebar menu -->
+    <div class="dismiss">
+        <i class="fas fa-arrow-left"></i>
+    </div>
+    <div class="list-featured-activity"style="overflow: scroll; height: 100vh;">
+    {% for cat in site.categories %}
+        <div class="list-featured-activity " style="margin-top: 20px;">
+            {% if page.categories contains cat[0] %}
+            {% if cat[0] == "" %}
+            <div class="spanborder-cyan text-capitalize font-weight-bold" id="{{ no-cat | downcase }} " style="font-size: 1.2rem; margin-left: 20px; color: steelblue;"><span>カテゴリなし</span></div>
+            {% else %}
+            <div class="spanborder-cyan text-capitalize font-weight-bold" id="{{ category[0] | downcase }}" style="font-size: 1.2rem; margin-left: 20px; color: steelblue;"><span>{{ cat[0] }}</span></div>
+            {% endif %}
+            <ul>
+            {% for post in cat[1] %}
+            
+                {% if post.title == page.title %}
+                <li class="sidebar-h2 highlighted">
+                    <div id="bar">&nbsp;</div>
+                    <div>
+                        <a href="{{site.baseurl}}{{ post.url }}" class="font-weight-bold " style="color: steelblue;">{{ post.title }}</a>
+                    </div>
+                </li>
+                {%  else %}
+                <li class="sidebar-h2">
+                    <div>
+                    <a href="{{site.baseurl}}{{ post.url }}" style="color: lightblue;">{{ post.title }}</a>
+                    </div>
+                </li>
+                {% endif %}
+            {% endfor %}
+            </ul>
+            {% endif %}
+        {% endfor %}
+    </div>
+</nav>
+<!-- Dark overlay -->
+<div class="overlay"></div>

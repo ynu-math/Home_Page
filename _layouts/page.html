@@ -1,14 +1,37 @@
 ---
 layout: default
 ---
-{% include mathjax.html %}
-<div class="container">
-<h3 class="font-weight-bold spanborder"><span>{{page.title}}</span></h3>
-<div class="page-content">
-{{ content }}
-<!-- Comments -->
-{% if page.comments == true %}
-{% include comments.html %}
-{% endif %}
+{% assign author =  site.authors[page.author]%}
+<!-- Wrapper -->
+<div class="wrapper">
+
+    <!-- Content -->
+    <div class="content">
+		
+
+		{% include page-headline.html %}
+			
+			<div class="container-lg pt-4 pb-4">	
+				<div class="row justify-content-center">
+					<div class="col-md-1">
+					</div>
+					<div class="col-md-12 col-lg-8" style="padding: 0 5% 0 10%;">
+						<!-- Article -->
+						<article class="article-post">                
+							{{ content }}                
+						</article>
+						<div class="text-muted d-block mt-1" style="text-align: right; font-size: 0.7rem;">
+							Last revised {{ site.time }}
+						</div>
+					</div>
+					<div class="col-md-2 d-none d-lg-block">
+						{%- include toc.html -%}
+					</div>
+				</div>
+			</div>
+ 
+    </div>
+    <!-- End content -->
+ 
 </div>
-</div>
+<!-- End wrapper -->

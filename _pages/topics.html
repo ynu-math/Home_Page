@@ -1,0 +1,45 @@
+---
+title: "記事一覧"
+layout: default
+permalink: "/topics.html"
+---
+<div class="container">
+    <div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative h-100 tofront">
+        <h2 class="font-weight-bold spanborder"><span>{{page.title}}</span></h2>
+    </div>
+</div>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="d-flex flex-wrap">
+        {% for category in site.categories %} 
+        <div class="list-featured-activity" style="padding-left: 10%;">
+            {% if category[0] == "" %}
+            <div class="spanborder-cyan text-capitalize font-weight-bold" id="{{ no-cat | downcase }} " style="font-size: 1.2rem; color: steelblue;"><span>カテゴリなし</span></div>
+            {% else %}
+            <div class=" spanborder-cyan text-capitalize font-weight-bold" id="{{ category[0] | downcase }}" style="font-size: 1.2rem; color: steelblue;"><span>{{ category[0] }}</span></div>
+            {% endif %}
+            
+        {% for post in category[1] %}
+        <li class="mb-3 d-flex" style="width: 250px; margin-left: 20px;">
+            <div>
+                <div class="font-weight-bold">
+                    <a href="{{site.baseurl}}{{ post.url }}" class="text-dark" style="font-size: 1rem;">{{ post.title }}</a>
+                </div>
+                <!--
+                <div class="d-block text-muted" style="text-align: right;">
+                    {{post.date | date: "%Y-%m-%d"}}
+                </div>
+                -->
+            </div>
+            </li>
+        {% endfor %}
+        </div>
+        {% endfor %}
+        </div>
+    </div>
+
+
+    <div class="text-muted d-block mt-1" style="text-align: right; font-size: 0.7rem;">
+        Last revised {{ site.time }}</div>
+</div>
+

@@ -3,7 +3,7 @@ name: '横浜国立大学数学サークル'
 description: '学生有志による数学のゼミ活動を行っています．'
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
-baseurl: 'https://ynumath.netlify.app/'
+baseurl: ''
 disqus: ''
 email: 'ynumath.integral@gmail.com'
 mailchimp-list: ''
@@ -26,7 +26,7 @@ asciidoctor:
 
 authors:
     shiba:
-      name:           shiba dog
+      name:           柴犬レオ
       site:           
       avatar:         /assets/images/shiba-dog-leo.jpg
       bio:            ""
