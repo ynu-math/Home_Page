@@ -1,14 +1,25 @@
 ---
-title: "Calendar"
+title: "カレンダー"
 layout: default
 permalink: "/calendar.html"
 ---
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset='utf-8' />
-<link href='assets/css/calendar.css' rel='stylesheet' />
-<script src='assets/js/calendar.js'></script>
+<div class="container">
+  <div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative h-100 tofront">
+      <h2 class="font-weight-bold spanborder"><span>{{page.title}}</span></h2>
+  </div>
+</div>
+<div class="container">
+  <div class="row justify-content-center">
+      <div class="col-md-12">
+          <h1 class="font-weight-bold title h6 text-uppercase mb-4" >{{page.tile}}</h1>
+          <div id='loading'>loading...</div>
+          <div id='calendar'></div>
+      </div>
+  </div>
+</div>
+
+
+<script src='{{site.baseurl}}/assets/js/calendar.js'></script>
 <script>
 
   document.addEventListener('DOMContentLoaded', function() {
@@ -17,14 +28,14 @@ permalink: "/calendar.html"
     var calendar = new FullCalendar.Calendar(calendarEl, {
 
       headerToolbar: {
-        left: 'prevYear,prev,next,nextYear today',
+        left: 'prev,next',//'prevYear,prev,next,nextYear today',
         center: 'title',
-        right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
+        right: 'dayGridMonth,listWeek' //'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
       },
       navLinks: true, // can click day/week names to navigate views
       nowIndicator: true,
 
-      weekNumbers: true,
+      weekNumbers: false,
       weekNumberCalculation: 'ISO',
 
       editable: true,
@@ -43,7 +54,7 @@ permalink: "/calendar.html"
 
       eventClick: function(arg) {
         // opens events in a popup window
-        window.open(arg.event.url, 'google-calendar-event', 'width=700,height=600');
+        window.open(arg.event.url, 'google-calendar-event', 'width=80vw,height=60vh');
 
         arg.jsEvent.preventDefault() // don't navigate in main tab
       },
@@ -59,57 +70,5 @@ permalink: "/calendar.html"
   });
 
 </script>
-<style>
-
-    body {
-      margin: 40px 10px;
-      padding: 0;
-      font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
-      font-size: 14px;
-    }
-  
-    #calendar {
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-  
-  </style>
-<style>
-
-  body {
-    margin: 40px 10px;
-    padding: 0;
-    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
-    font-size: 14px;
-  }
-
-  #calendar {
-    max-width: 1100px;
-    margin: 0 auto;
-  }
-
-</style>
-</head>
-<body>
-
-  
-
-  
-
-  <div class="container">
-    <br>
-    <br>
-    <br>
-    <h4 class="font-weight-bold spanborder"><span>{{page.title}}</span></h4>
-        
-                    <div id='loading'>loading...</div>
-                    <div id='calendar'></div>
-            
-  </div>
 
 
-  
-  
-
-</body>
-</html>
