@@ -1,0 +1,39 @@
+= ゼミ第1回
+:page-author: shiba
+:page-layout: post
+:page-categories:  [ "Analysis_II_2021"]
+:page-tags: ["議事録"]
+:page-image: assets/images/Analysis_II.png
+:page-permalink: Analysis_II_2021/seminar-01
+:sectnums:
+:sectnumlevels: 2
+:dummy: {counter2:section:0}
+
+
+## 時間
+
+14:30- 18:45
+
+## 参加者
+
+- zab
+- 柴犬レオ
+- 温州ミカン
+- サカモト
+
+## 発表範囲
+
+- zab
+  - 11.1 集合・論理・関係
+  - 11.2 濃度
+
+## 次回の範囲
+
+- zab
+  - 11.3 ツォルンの補題
+
+## 連絡
+
+    温州ミカン君へ
+    11章が終わったら，線形代数のまとめを発表してもらいたいのですが，できそうですか．
+    柴犬レオ

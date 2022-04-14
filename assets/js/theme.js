@@ -1,4 +1,4 @@
- // alertbar later
+ /*// alertbar later
     $(document).scroll(function () {
         var y = $(this).scrollTop();
         if (y > 280) {
@@ -7,7 +7,7 @@
             $('.alertbar').fadeOut();
         }
     });
-
+*/
 
 // Hide Header on on scroll down
     var didScroll;

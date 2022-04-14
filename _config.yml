@@ -1,11 +1,11 @@
 # Site
-name: 'Learning Dock'
-description: 'Learing Dock'
+name: '横浜国立大学数学サークル'
+description: '学生有志による数学のゼミ活動を行っています．'
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
-baseurl: '/Learning_Dock'
+baseurl: ''
 disqus: ''
-email: 'shiba.dog.leo.private@gmail.com'
+email: 'ynumath.integral@gmail.com'
 mailchimp-list: ''
 
 include: ["_pages"]
@@ -26,12 +26,20 @@ asciidoctor:
 
 authors:
     shiba:
-      name:           shiba dog
+      name:           柴犬レオ
       site:           
-      avatar:         /assets/images/avatar.jpg
+      avatar:         /assets/images/shiba-dog-leo.jpg
       bio:            ""
       email:          shiba.dog.leo.private@gmail.com
       twitter:        https://twitter.com/shiba_dog_leo
+
+    zab:
+      name:           zab
+      site:           
+      avatar:         /assets/images/zab.jpg
+      bio:            ""
+      email:          
+      twitter:        
 
 # Defaults
 defaults:
@@ -41,8 +49,7 @@ defaults:
       path: "_posts"
     values:
       layout: post
-      author: shiba
-      avatar: /assets/images/avatar.jpg
+
       
   # all pages
   - scope:
@@ -51,13 +58,6 @@ defaults:
       layout: page
       
 
-  - scope:
-      path: "_Blog"
-    values:
-      layout: post
-      author: shiba
-      avatar: /assets/images/avatar.jpg
-      draft: true
 
 # Syntax
 markdown: kramdown
@@ -65,7 +65,6 @@ highlighter: rouge
 
 # Paginate
 paginate: 10
-
 
 
 # Exclude metadata and development time dependencies (like Grunt plugins)

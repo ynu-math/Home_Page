@@ -1,36 +1,60 @@
 ---
-title: "Categories"
+title: "カテゴリ一覧"
 layout: default
 permalink: "/categories.html"
 ---
-
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-        <h1 class="font-weight-bold title h6 text-uppercase mb-4" >Categories</h1>
-            
-        {% for category in site.categories %} 
-        <h4 class="font-weight-bold spanborder text-capitalize" id="{{ category[0] | downcase }}" style="color: orange"><span>{{ category[0] }}</span></h4>
+  <div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative h-100 tofront">
+      <h2 class="font-weight-bold spanborder"><span>{{page.title}}</span></h2>
+          
+  </div>
+</div>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="d-flex flex-wrap">
+      {% for category in site.categories %} 
+      <div class="list-featured-activity" style="padding-left: 5%;">
+      {% if category[0] == "" %}
+      <div class="spanborder-cyan text-capitalize font-weight-bold" id="{{ no-cat | downcase }} " style="font-size: 1.2rem; color: steelblue;"><span>カテゴリなし</span></div>
+      {% else %}
+      <div class=" spanborder-cyan text-capitalize font-weight-bold" id="{{ category[0] | downcase }}" style="font-size: 1.2rem; color: steelblue;"><span>{{ category[0] }}</span></div>
+      {% endif %}
             
         {% assign pages_list = category[1] %}
         {% for post in pages_list %}
-        {% if post.title != null %}
-          {% if group == null or group == post.group %}
-         
-            {% include main-loop-card.html %}
+          {% if post.title != null %}
+            {% if group == null or group == post.group %}
+              {% include main-loop-card.html %}
+            {% endif %}
           {% endif %}
-        {% endif %}
         {% endfor %}
         {% assign pages_list = nil %}
         {% assign group = nil %}
-
-        {% endfor %}
-
-        </div>
-        
-            <div class="col-md-4">
-        {% include sidebar-featured.html %}    
+      </div>
+      {% endfor %}
     </div>
-        
-    </div>
+  </div>
 </div>
+<!--
+<div class="d-flex flex-wrap">
+  {% for category in site.categories %} 
+  <div class="list-featured-activity" style="padding-left: 10%;">
+      {% if category[0] == "" %}
+      <div class="spanborder-cyan text-capitalize font-weight-bold" id="{{ no-cat | downcase }} " style="font-size: 1.2rem; color: steelblue;"><span>カテゴリなし</span></div>
+      {% else %}
+      <div class=" spanborder-cyan text-capitalize font-weight-bold" id="{{ category[0] | downcase }}" style="font-size: 1.2rem; color: steelblue;"><span>{{ category[0] }}</span></div>
+      {% endif %}
+      
+  {% for post in category[1] %}
+  <li class="mb-3 d-flex" style="width: 250px; margin-left: 20px;">
+      <div>
+          <div class="font-weight-bold">
+              <a href="{{site.baseurl}}{{ post.url }}" class="text-dark" style="font-size: 1rem;">{{ post.title }}</a>
+          </div>
+      </div>
+      </li>
+  {% endfor %}
+  </div>
+  {% endfor %}
+  </div>
+-->

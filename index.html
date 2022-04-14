@@ -1,9 +1,8 @@
 ---
-title: "Learning Dock"
+title: "横浜国立大学数学サークル"
 layout: default
 pagination:
     enabled: true
-description: "Learning Dock"
 ---
 
 
@@ -54,11 +53,11 @@ description: "Learning Dock"
                 {% if second_post.image %}
                 <div class="col-md-4">
                 <a href="{{site.baseurl}}{{second_post.url}}">
-                 <img class="w-100" src="{% if second_post.image contains "://" %}{{ second_post.image }}{% else %}{{ second_post.image | absolute_url }}{% endif %}" alt="{{ second_post.title }}">
+                 <img class="w-auto h-100" style="max-height:200px" src="{% if second_post.image contains "://" %}{{ second_post.image }}{% else %}{{ second_post.image | absolute_url }}{% endif %}" alt="{{ second_post.title }}">
                 </a>
                 </div>
                 {% endif %}                
-                <div>
+                <div class="col-md-8">
                     <h2 class="mb-2 h6 font-weight-bold">
                     <a class="text-dark" href="{{site.baseurl}}{{second_post.url}}">{{ second_post.title }}</a>
                     </h2>
@@ -81,11 +80,11 @@ description: "Learning Dock"
                 {% if third_post.image %}
                 <div class="col-md-4">
                 <a href="{{site.baseurl}}{{third_post.url}}">
-                 <img class="w-100" src="{% if third_post.image contains "://" %}{{ third_post.image }}{% else %}{{site.baseurl}}/{{ third_post.image }}{% endif %}" alt="{{ third_post.title }}">
+                 <img class="w-auto h-100" style="max-height:200px" src="{% if third_post.image contains "://" %}{{ third_post.image }}{% else %}{{site.baseurl}}/{{ third_post.image }}{% endif %}" alt="{{ third_post.title }}">
                 </a>
                 </div>
                 {% endif %}                
-                <div>
+                <div class="col-md-8">
                     <h2 class="mb-2 h6 font-weight-bold">
                     <a class="text-dark" href="{{site.baseurl}}{{third_post.url}}">{{ third_post.title }}</a>
                     </h2>
@@ -108,11 +107,11 @@ description: "Learning Dock"
                 {% if fourth_post.image %}
                 <div class="col-md-4">
                 <a href="{{site.baseurl}}{{fourth_post.url}}">
-                <img class="w-100" src="{% if fourth_post.image contains "://" %}{{ fourth_post.image }}{% else %}{{site.baseurl}}/{{ fourth_post.image }}{% endif %}" alt="{{ fourth_post.title }}">
+                <img class="w-auto h-100" style="max-height:200px" src="{% if fourth_post.image contains "://" %}{{ fourth_post.image }}{% else %}{{site.baseurl}}/{{ fourth_post.image }}{% endif %}" alt="{{ fourth_post.title }}">
                 </a>
                 </div>
                 {% endif %}                
-                <div>
+                <div class="col-md-8">
                     <h2 class="mb-2 h6 font-weight-bold">
                     <a class="text-dark" href="{{site.baseurl}}{{fourth_post.url}}">{{ fourth_post.title }}</a>
                     </h2>
@@ -128,9 +127,7 @@ description: "Learning Dock"
                     </small>
                 </div>
             </div>
-        
     </div>
-    
 </div>
     
 <!-- Sticky - add sticky tag to the post you want to highlight here - tags: [sticky] -->
@@ -168,7 +165,7 @@ description: "Learning Dock"
    
     <div class="col-md-8 main-loop">
         
-        <h4 class="font-weight-bold spanborder" style="color: orange;"><span>All Stories</span></h4>
+        <h2 class="font-weight-bold spanborder"><span>All Posts</span></h2>
         
 
         {% for post in paginator.posts %}
@@ -213,7 +210,8 @@ description: "Learning Dock"
     </div>
     
 </div>
-
+<div class="text-muted d-block mt-1" style="text-align: right; font-size: 0.7rem;">
+    Last revised {{ site.time }}</div>
 
 
 </div>

@@ -1,0 +1,33 @@
+= ゼミ第2回
+:page-author: shiba
+:page-layout: post
+:page-categories:  [ "Analysis_II_2021"]
+:page-tags: ["議事録"]
+:page-image: assets/images/Analysis_II.png
+:page-permalink: Analysis_II_2021/seminar-02
+:sectnums:
+:sectnumlevels: 2
+:dummy: {counter2:section:0}
+
+
+## 時間
+
+16:30- 20:00
+
+## 参加者
+
+- zab
+- 柴犬レオ
+- 温州ミカン
+- サカモト
+
+## 発表範囲
+
+- zab
+  - 11.2 濃度
+  - 11.3 選択公理
+
+## 次回の範囲
+
+- 柴犬レオ
+  - 線型代数概論

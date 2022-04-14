@@ -1,5 +1,5 @@
 <div class="sticky-top sticky-top-offset">
-    <h4 class="font-weight-bold spanborder" style="color: orange;"><span>Featured</span></h4>  
+    <h2 class="font-weight-bold spanborder"><span>Featured</span></h2>  
     <ol class="list-featured">				
         {% for post in site.tags.featured %}                
             <li class="mb-4">
@@ -18,6 +18,6 @@
             </li>                
         {% endfor %}   
     </ol>
-    <h4 class="font-weight-bold spanborder" style="color: orange;"><span>Tweets</span></h4>
-    {% twitter https://twitter.com/jekyllrb maxwidth=500 limit=2 %}
+    <h2 class="font-weight-bold spanborder"><span>Tweets</span></h2>
+    {% twitter https://twitter.com/ynu_integral maxwidth=500 limit=2 %}
 </div> 

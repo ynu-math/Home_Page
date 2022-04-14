@@ -1,0 +1,37 @@
+= ゼミ第5回
+:page-author: shiba
+:page-layout: post
+:page-categories:  [ "Analysis_I_2020"]
+:page-tags: ["議事録"]
+:page-image: assets/images/Analysis_I.png
+:page-permalink: Analysis_I_2020/seminar-05
+:sectnums:
+:sectnumlevels: 2
+:dummy: {counter2:section:0}
+
+
+## 時間
+
+10:00-12:50
+
+## 参加者
+
+- zab
+- 柴犬レオ
+- 温州ミカン
+
+## やったこと
+
+- ゼミ発表
+  - 温州ミカン:3.1.A-3.1.D
+  - 柴犬レオ:3.1.E-3.1.G
+  - zab:3.1.H
+
+## 連絡
+
+次回は9月4日(金)にミーティングをします．
+
+話し合うこと
+:   - 次のゼミの範囲
+- 9月中のゼミ頻度
+- 演習問題の扱いをどうするか

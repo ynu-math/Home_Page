@@ -1,0 +1,36 @@
+= ミーティング第2回
+:page-author: shiba
+:page-layout: post
+:page-categories:  [ "Analysis_II_2021"]
+:page-tags: ["議事録"]
+:page-image: assets/images/logo.png
+:page-permalink: Analysis_II_2021/meeting-02
+:sectnums:
+:sectnumlevels: 2
+:dummy: {counter2:section:0}
+
+
+## 時間
+
+10:00-11:00
+
+## 参加者
+
+- zab
+- 柴犬レオ
+- 温州ミカン
+
+## 解析入門 上 ゼミの反省
+
+7/18-11/14で終わらせた
+
+## 解析入門 中 ゼミの方針
+
+- 発表の範囲を小節ごとではなく節ごとに
+- 目標は発表期間：2か月
+- 演習期間：3か月
+
+## 決まったこと
+
+中はテスト明けから始めよう
+それまでに必ず上の演習問題を解き終わろう

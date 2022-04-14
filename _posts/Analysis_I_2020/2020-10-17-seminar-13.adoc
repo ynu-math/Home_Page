@@ -1,0 +1,40 @@
+= ゼミ第13回
+:page-author: shiba
+:page-layout: post
+:page-categories:  [ "Analysis_I_2020"]
+:page-tags: ["議事録"]
+:page-image: assets/images/Analysis_I.png
+:page-permalink: Analysis_I_2020/seminar-13
+:sectnums:
+:sectnumlevels: 2
+:dummy: {counter2:section:0}
+
+## 時間
+
+10:00-10:40
+
+## 参加者
+
+- zab
+- 柴犬レオ
+- 温州ミカン（回線不良のため参加はほぼ無し）
+
+## やったこと
+
+- ゼミ発表
+  - 7.3E-7.3G 8.1A-8.1B
+
+## 次回の範囲
+
+- 8.2C-8.2H
+- ウォリスの公式の導出
+- スターリングの公式による近似
+- γ関数の確認
+- ルジャンドルの球関数について．
+
+## 連絡
+
+- 来週は11/24（土）10:00-から行います
+- 発表者はランダムに決めるか全員で発表するか判断は任せます
+
+（追記）次回は親戚の家を借りることができると思うので、共有をして発表していきたいと思います。よろしくお願いします

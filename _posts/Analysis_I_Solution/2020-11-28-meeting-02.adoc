@@ -1,0 +1,45 @@
+= ミーティング第2回
+:page-author: shiba
+:page-layout: post
+:page-categories:  [ "Analysis_I_Solution"]
+:page-tags: ["議事録"]
+:page-image: assets/images/logo.png
+:page-permalink: Analysis_I_Solution/meeting-02
+:sectnums:
+:sectnumlevels: 2
+:dummy: {counter2:section:0}
+
+## 時間
+
+10:00-15:00
+
+## 参加者
+
+- zab
+- 柴犬レオ
+- 温州ミカン
+
+## やったこと
+
+- 前回githubアカウント作った
+- SSHKeyの生成と登録
+- ynu-mathのフォルダからAnalysis_IをFork
+- 自分のマシンにclone
+- 編集してコミット
+
+## 決まったこと
+
+~~各節の問題番号がmod 3で~~
+~~柴犬レオ:0~~
+~~zab:1~~
+~~温州ミカン:2~~
+~~の問題をtexに打ち込む．~~(2021-03-17修正)問題は全員が全部解く
+
+どの問題をtexに打つかは解き終わってから決める．
+
+## 来週やること
+
+- 各自節末問題を解き進める
+- Projectを作成する
+- Pull Requestを使う
+- 各自のbranchをmargeする

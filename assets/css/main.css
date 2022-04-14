@@ -64,7 +64,8 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Segoe UI", "Helvetica Neue", "Arial";
+  font-family: "Hiragino Kaku Gothic ProN",
+  "Hiragino Sans","Segoe UI", "Helvetica Neue", "Arial", ;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.6;
@@ -1989,13 +1990,13 @@ fieldset:disabled a.btn {
       box-shadow: 0 0 0 0.2rem rgba(255, 151, 122, 0.5); }
 
 .btn-cyan {
-  color: #212529;
-  background-color: #35bdff;
-  border-color: #35bdff; }
+  color: #325D72;
+  background-color: #fff;
+  border-color: #325D72; }
   .btn-cyan:hover {
     color: #fff;
-    background-color: #0fb1ff;
-    border-color: #02acff; }
+    background-color: steelblue;
+    border-color: steelblue; }
   .btn-cyan:focus, .btn-cyan.focus {
     box-shadow: 0 0 0 0.2rem rgba(53, 189, 255, 0.5); }
   .btn-cyan.disabled, .btn-cyan:disabled {
@@ -3302,7 +3303,7 @@ input[type="button"].btn-block {
   display: inline-block;
   padding-top: 0.68rem;
   padding-bottom: 0.68rem;
-  margin-right: 1rem;
+  
   font-size: 1.15rem;
   line-height: inherit;
   white-space: nowrap; }
@@ -7152,7 +7153,7 @@ button.bg-lightblue:focus {
   font-weight: 400 !important; }
 
 .font-weight-bold {
-  font-weight: 700 !important;}
+  font-weight: 650 !important;}
 
 .font-italic {
   font-style: italic !important; }
@@ -7227,10 +7228,10 @@ a.text-salmon:hover, a.text-salmon:focus {
   color: #ff6f47 !important; }
 
 .text-cyan {
-  color: #35bdff !important; }
+  color: #325D72 !important; }
 
 a.text-cyan:hover, a.text-cyan:focus {
-  color: #02acff !important; }
+  color: steelblue !important; }
 
 .text-gray {
   color: #ced4da !important; }
@@ -8460,3 +8461,8 @@ html {
     align-self: baseline !important; }
   .align-self-xl-stretch {
     align-self: stretch !important; } }
+
+
+.taglist{
+  margin: 1rem;
+}

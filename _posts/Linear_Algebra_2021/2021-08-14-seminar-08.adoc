@@ -1,0 +1,39 @@
+= ゼミ第8回
+:page-author: shiba
+:page-layout: post
+:page-categories:  [ "Linear_Algebra_2021"]
+:page-tags: ["議事録"]
+:page-image: assets/images/Linear_Algebra.png
+:page-permalink: Linear_Algebra_2021/seminar-08
+:sectnums:
+:sectnumlevels: 2
+:dummy: {counter2:section:0}
+
+
+== 時間
+
+10:00-14:40
+
+== 参加者
+
+* サカモト
+* 柴犬レオ
+* nodomi
+* 山下こうへい
+
+
+== 発表
+
+* 第5章 1-5節 山下こうへい
+
+
+
+== 話し合い
+
+
+
+== 次回の範囲
+
+* 山城
+** 第5章 6-10節
+

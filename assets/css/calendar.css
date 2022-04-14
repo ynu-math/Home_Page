@@ -451,8 +451,8 @@ When it's NOT activated, the fc-button classes won't even be in the DOM.
   }
 .fc .fc-bg-event .fc-event-title {
       margin: .5em;
-      font-size: .85em;
-      font-size: var(--fc-small-font-size, .85em);
+      font-size: .5em;
+      font-size: var(--fc-small-font-size, .5em);
       font-style: italic;
     }
 .fc .fc-highlight {
@@ -721,7 +721,7 @@ A HORIZONTAL event
 }
 .fc .fc-daygrid-day-top {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
   }
 .fc .fc-day-other .fc-daygrid-day-top {
     opacity: 0.3;
@@ -735,6 +735,7 @@ A HORIZONTAL event
     position: relative;
     z-index: 4;
     padding: 4px;
+    font-size: 1rem;
   }
 .fc {
 
@@ -809,7 +810,8 @@ A HORIZONTAL event
 }
 .fc .fc-daygrid-day-bottom {
     font-size: .85em;
-    padding: 2px 3px 0
+    padding: 2px 3px 0;
+    color: transparent;
   }
 .fc .fc-daygrid-day-bottom:before {
   content: "";
@@ -819,7 +821,13 @@ A HORIZONTAL event
     position: relative;
     z-index: 4;
     cursor: pointer;
+    top: -0.9rem;
+    right: 0rem;
   }
+  .fc-daygrid-more-link::before {
+  content: "●";
+  color: cornflowerblue;
+}
 .fc {
 
   /* week number (within frame) */
@@ -892,7 +900,9 @@ A HORIZONTAL event
     flex-shrink: 1;
     min-width: 0; /* important for allowing to shrink all the way */
     overflow: hidden;
-    font-weight: bold;
+    font-size: 0.8rem;
+    color: #fff;
+    background-color: cornflowerblue;
   }
 .fc-daygrid-dot-event:hover,
   .fc-daygrid-dot-event.fc-event-mirror {

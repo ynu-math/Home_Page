@@ -1,0 +1,44 @@
+---
+layout: null
+---
+{
+    "nodes":[
+        {% for post in site.posts %}
+            {
+            "title":"{{ post.title }}",
+            "id": "{{ post.permalink }}",
+            "url": "{{ post.url }}",
+            "tags": [{% for tag in post.tags %}"{{ tag }}"{% if forloop.last %}{% else %},{% endif %}{% endfor %}],
+            "category": [{% for category in post.categories %}"{{ category }}"{% if forloop.last %}{% else %},{% endif %}{% endfor %}]
+        }{% if forloop.last %}{% else %},{% endif %}{% endfor %}
+    ],
+
+"links": [{% assign flag = 0 %}
+
+
+    
+    
+    {% for post in site.posts %}{% if post.link_from.size > 0 %}{% for link in post.link_from %}{% if link=="" %}{%  else %}
+    {% if flag==0 %}{% else %},{% endif %}{
+        "source": "{{ link }}",
+        "target": "{{ post.permalink }}",
+        "tag": "{{post.tag}}",
+        "value": 5,
+        "comment": "link_from"{% assign flag = 1 %}
+    }{% endif %}{% endfor %}{% endif %}{% endfor %}
+
+
+
+
+
+
+    {% for post_from in site.posts %}{% if post_from.tags.size > 0 %}{% for  tag in post_from.tags %}{% for Tag in site.tags %}{% if tag==Tag[0] %}{% for post_to in Tag[1] %}
+    {% if flag==0 %}{% else %},{% endif %}{
+    "source": "{{ post_from.permalink }}",
+    "target": "{{ post_to.permalink }}",
+    "tag": "{{tag}}",
+    "value": 0{% assign flag = 1 %}
+    }{% endfor %}{% endif %}{% endfor %}{% endfor %}{% endif %}{% endfor %}
+        
+    ]
+}

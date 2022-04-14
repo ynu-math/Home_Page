@@ -1,0 +1,35 @@
+= ゼミ第3回
+:page-author: shiba
+:page-layout: post
+:page-categories:  [ "Analysis_I_2020"]
+:page-tags: ["議事録"]
+:page-image: assets/images/Analysis_I.png
+:page-permalink: Analysis_I_2020/seminar-03
+:sectnums:
+:sectnumlevels: 2
+:dummy: {counter2:section:0}
+
+
+## 時間
+
+10:00-14:00
+
+## 参加者
+
+- zab
+- 柴犬レオ
+- 温州ミカン
+
+## やったこと
+
+- ゼミ発表
+  - zab:2.1.A-2.1.F
+  - 柴犬レオ:2.2.A-2.2.D
+  - 温州ミカン:2.2.E-2.2F
+
+## 次回の範囲
+
+- ゼミ発表
+  - zab:2.3.A-2.3.D
+  - 柴犬レオ:2.3.E-2.3.F
+  - 温州ミカン:2.3.G-2.3.I

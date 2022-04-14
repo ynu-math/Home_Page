@@ -1,0 +1,36 @@
+= ゼミ第12回
+:page-author: shiba
+:page-layout: post
+:page-categories:  [ "Analysis_I_2020"]
+:page-tags: ["議事録"]
+:page-image: assets/images/Analysis_I.png
+:page-permalink: Analysis_I_2020/seminar-12
+:sectnums:
+:sectnumlevels: 2
+:dummy: {counter2:section:0}
+
+## 時間
+
+10:00-13:00
+
+## 参加者
+
+- zab
+- 温州ミカン
+- 柴犬レオ(11:00～)
+
+## やったこと
+
+- ゼミ発表
+  - 柴犬レオ:7.2.H-7.2.E
+
+## 次回の範囲
+
+- 7.3.E-7.3.G
+- 8.2.A-8.2.B
+置換積分を理解したい．
+
+## 連絡
+
+~~来週は11月17日(土曜日)10:00から行います~~
+来週は10月17日(土曜日)10:00から行います(10月17日修正)

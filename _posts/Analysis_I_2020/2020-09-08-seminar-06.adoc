@@ -1,0 +1,39 @@
+= ゼミ第6回
+:page-author: shiba
+:page-layout: post
+:page-categories:  [ "Analysis_I_2020"]
+:page-tags: ["議事録"]
+:page-image: assets/images/Analysis_I.png
+:page-permalink: Analysis_I_2020/seminar-06
+:sectnums:
+:sectnumlevels: 2
+:dummy: {counter2:section:0}
+
+## 時間
+
+10:00-13:00
+
+## 参加者
+
+- zab
+- 柴犬レオ
+- 温州ミカン
+- ゆひの介
+
+## やったこと
+
+- ゼミ発表
+  - 温州ミカン:3.1.A-3.1.D
+  - 柴犬レオ:3.1.E-3.1.H
+  - zab:4.1.A-4.1.D
+
+## 次回の範囲
+
+- ゼミ発表
+  - zab:4.1.E-4.1.G
+  - 温州ミカン:4.2.A-4.2.C
+  - 柴犬レオ:4.2.D-4.2.F
+
+## 連絡
+
+完全に理解できていなくても，理解できていない場所を記録して先に進みましょう．
