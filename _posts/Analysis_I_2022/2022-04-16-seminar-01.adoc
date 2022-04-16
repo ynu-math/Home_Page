@@ -1,0 +1,45 @@
+= ゼミ第1回
+:page-author: shiba
+:page-layout: post
+:page-categories:  [ "杉浦解析 I 2022"]
+:page-tags: ["議事録"]
+:page-image:  assets/images/Analysis_I_2022/seminar-01.jpg
+:page-permalink: Analysis_I_2022/seminar-01
+:sectnums:
+:sectnumlevels: 2
+:dummy: {counter2:section:0}
+
+== 時間
+:dummy: {counter2:section}
+:num: 0
+
+13:00-15:00
+
+== 参加者
+:dummy: {counter2:section}
+:num: 0
+
+伊達，内藤，小島，香川，永作，坂本，福田
+
+== 内容
+:dummy: {counter2:section}
+:num: 0
+
+発表者::
+伊達
+
+範囲::
+p.3 \( \S \) 1 実数 \([ 1 ]\) 四則演算
+から
+p.6 \( \S \) 1 実数 \([ 2 ]\) 順序 命題 1.3
+
+反省::
+* 命題を示すときはまず主張を書こう
+* いま必要条件を示しているのか，十分条件を示しているのか明記しよう．
+
+次回::
+* 発表者
+* 範囲
+p.3 \(\S\) 実数 順序 命題 1.3
+から
+p.16 \(\S\) 実数列の極限

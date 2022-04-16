@@ -1,0 +1,62 @@
+= ミーティング第1回
+:page-author: shiba
+:page-layout: post
+:page-categories:  [ "杉浦解析 I 2022"]
+:page-tags: ["議事録"]
+:page-image:  assets/images/logo.jpg
+:page-permalink: Analysis_I_2022/meeting-01
+:sectnums:
+:sectnumlevels: 2
+:dummy: {counter2:section:0}
+
+== 時間
+:dummy: {counter2:section}
+:num: 0
+
+10:00-13:00
+
+== 参加者
+:dummy: {counter2:section}
+:num: 0
+
+伊達，内藤，小島，香川，永作，坂本，福田
+
+== 決まったこと
+:dummy: {counter2:section}
+:num: 0
+
+=== 毎週の活動
+
+開催頻度::
+. 土曜日 
+.. 朝 10:00-15:00 対面
+.. 夕方 17:00-19:00 オンライン
+を隔週で．
+
+内容::
+. 進捗確認のための集まり
+. 発表
+
+=== 年間の活動
+
+目標::
+春休みの終わり(2023-03-31)に読了する．
+
+春学期(2022-04-08～2022-08-07)::
+I, II 章
+
+夏休み(2022-08-08～2022-09-30)::
+III, IV章 + 
+I, II, III の演習問題
+
+秋学期(2022-10-01～2023-02-10)::
+IV, V章
+
+春休み::
+予備
+
+その他::
+. 問題演習は長期休暇に集中してやる
+
+発表ローテーション::
+伊達 \( \to \) 内藤 \(\to\) 小島 \(\to\) 香川 \(\to\) 永作 \(\to\) 井上
