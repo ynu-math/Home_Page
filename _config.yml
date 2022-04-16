@@ -26,13 +26,12 @@ asciidoctor:
 
 authors:
     shiba:
-      name:           柴犬レオ
+      name:           福田
       site:           
       avatar:         /assets/images/shiba-dog-leo.jpg
       bio:            ""
       email:          shiba.dog.leo.private@gmail.com
-      twitter:        https://twitter.com/shiba_dog_leo
-
+      twitter: 
     zab:
       name:           zab
       site:           
