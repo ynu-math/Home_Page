@@ -1,0 +1,53 @@
+= RubyとJekyll
+:page-author: shiba
+:page-layout: post
+:page-categories:  [ "テクノロジー"]
+:page-tags: ["Ruby","jekyll"]
+:page-image: assets/images/
+:page-permalink: Articles/git-and-github
+:dummy: {counter2:section:0}
+
+
+
+
+== 要約
+:dummy: {counter2:section}
+:num: 0
+
+* Rubyとは
+
+* Jekyllとは
+
+== 導入背景
+:dummy: {counter2:section}
+:num: 0
+
+この記事の目的は，このホームページに記事を投稿できるように，技術的な知識を身に着身に着けてもらうことです．
+
+このホームページのソースコードfootnote:[プログラムが書かれたファイルのこと．]は，githubというサイト上で公開されており，そのレポジトリfootnote:[フォルダのこと．]にファイルを追加することでこのホームページに新たな記事が追加されます．
+
+追加するファイルは`.adoc`ファイルであり，その書き方は(Articles/syntax-sample)[]で説明しています．
+
+この記事では，どうやってファイルをgithubに登録するかを説明します．
+
+== Git
+:dummy: {counter2:section}
+:num: 0
+
+本題に入る前に，予備知識を説明します．GitとGitHubは，名前は似ていますが，全くの別物です．Gitとは，分散型ファイル管理ソフトであり，GitHubはgitに関連する様々な機能を提供するサービスです．
+
+=== 分散型ファイル管理
+
+
+== GitHub
+:dummy: {counter2:section}
+:num: 0
+
+
+== プルリクエスト
+:dummy: {counter2:section}
+:num: 0
+
+
+
+
