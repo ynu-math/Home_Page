@@ -1,7 +1,7 @@
 = ミーティング第2回
 :page-author: shiba
 :page-layout: post
-:page-categories:  [ "Analysis_II_2021"]
+:page-categories:  [ "松坂解析 中 2021"]
 :page-tags: ["議事録"]
 :page-image: assets/images/logo.png
 :page-permalink: Analysis_II_2021/meeting-02
