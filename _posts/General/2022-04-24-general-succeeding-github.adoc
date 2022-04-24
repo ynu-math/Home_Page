@@ -161,5 +161,5 @@ git config --global color.ui auto
 
 次はローカルリポジトリに変更を加え，それをリモートリポジトリに反映させます．
 ****
-link:./general-succeeding-editing[コミット，プッシュ，プルリクエスト]
+link:./general-succeeding-editing[プレビュー，コミット，プッシュ]
 ****

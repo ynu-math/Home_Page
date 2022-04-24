@@ -1,0 +1,48 @@
+= プルリクエスト
+:page-author: shiba
+:page-layout: post
+:page-categories:  ["引継ぎ資料", "テクノロジー"]
+:page-tags: ["GitHub"]
+:page-image: ../assets/images/General/github.png
+:page-permalink: General/general-succeeding-pullrequest
+:sectnums:
+:sectnumlevels: 2
+:dummy: {counter2:section:0}
+
+※この記事は執筆途中です．
+
+== 前提と確認
+
+=== 前提
+
+* GitHub へ登録している．
+* このサイトのリポジトリを Fork した自分のリモートリポジトリがある．
+
+=== 確認
+
+このページでやることは次の通りです．
+
+* プルリクエストを送る．
+
+
+== プルリクエストを送る
+
+自分の GitHub リポジトリにアクセスしてください．
+
+ファイル一覧の上に，自分のコミットが反映されています．
+
+image:../assets/images/General/pullrequest/contribute.png[]
+
+次に， contribute ボタンを押し，Open pull request をクリックします．
+
+リクエスト先を
+`base repository: ynu-math/Home_Page`, `base: posting`
+に選択し， Create pull request をクリックします．
+
+タイトルを入力し，Create pull request をクリックします．
+
+以上で記事の投稿は終了です．
+
+最終的に，HP管理担当者がプルリクエストを受け入れて変更を元のリポジトリに反映させると，
+
+ウェブ上のページに変更が反映されます．
