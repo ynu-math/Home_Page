@@ -1,0 +1,163 @@
+= 記事投稿に必要な技術
+:page-author: shiba
+:page-layout: post
+:page-categories:  [ "引継ぎ資料", "テクノロジー"]
+:page-tags: ["VSCode"]
+:page-image: ../assets/images/General/technology.jpg
+:page-permalink: General/general-succeeding-technology
+:sectnums:
+:sectnumlevels: 2
+:dummy: {counter2:section:0}
+
+== 技術一覧
+
+このサイトに議事録や記事を投稿するのに最低限必要な技術を紹介します．
+
+=== ソフトウェア
+
+[#software, cols="1a,5a", grid='',]
+|===
+
+
+|link:https://code.visualstudio.com/[image:../assets/images/General/vscode.jpg[]]
+|link:https://code.visualstudio.com/[Visual Studio Code]::
+エディタです．エディタとは，テキストファイルやプログラムのソースコードなどを編集するソフトウェアです．
+
+
+|link:https://gitforwindows.org/[image:../assets/images/General/git.png[]]
+|link:https://gitforwindows.org/[Git]::
+バージョン管理システムです．バージョン管理とは，ファイルの変更履歴を記録し，管理するシステムです．
+
+|link:https://rubyinstaller.org/downloads/[image:../assets/images/General/ruby.jpg[]]
+|link:https://rubyinstaller.org/downloads/[Ruby]::
+プログラミング言語です．様々なアルゴリズム（処理）を実行するためのソフトウェアです．
+
+
+|===
+
+以上のソフトは最低限必要なので，各自のパソコンにダウンロードします． +
+以下に，ダウンロードと初期設定の仕方を記載しています． +
+上表の画像をクリックしてダウンロードページにジャンプできます． +
+
+
+=== サービス
+
+[#service, cols="1a,5a", grid='',]
+|===
+
+|image:../assets/images/General/github.png[]
+|GitHub::
+リポジトリ（Git で管理されるファイルのこと）を公開し，チームで開発するためのウェブサービスです．
+
+|===  
+
+このホームページの本体部分はGitHub上のリポジトリです． +
+各自GitHubのアカウントを作成して編集します．
+link:./general-succeeding-github[次のページ]で，初期設定の仕方を記載します． +
+
+
+== インストール
+
+=== VSCodeをインストール
+
+Visual Studio Code を略して VSCode といいます．
+
+以下を参考に，VSCode をインストールしてください．
+
+各記事とも，インストール以上のことをしていますが，ここでそれを行う必要はありません．
+
+==== Windows 向け
+
+****
+link:https://qiita.com/psychoroid/items/7d85ae6bade4a67aedb1/[Visual Studio Code (Windows版) のインストール]
+****
+
+==== Mac 向け
+
+****
+link:https://qiita.com/watamura/items/51c70fbb848e5f956fd6[MacOSでVisual Studio Codeをインストールする手順]
+****
+
+
+
+=== Git をインストール
+
+以下を参考に，Git をダウンロードしてください．
+
+ここでも，インストール以上のことをする必要はありません．
+
+==== Windows 向け
+
+****
+link:https://qiita.com/suke_masa/items/404f06309bb32ca6c9c5[WindowsにGit Bashをインストールする]
+****
+
+==== Mac 向け
+
+Mac の場合，PCに標準搭載されていることが多いです．記事の初めにその確認を行うので，そこで確認できれば，それ以上記事を読む必要はありません．
+
+****
+link:https://original-game.com/how-to-use-git2/[【Mac】Gitのダウンロードとインストールの手順]
+****
+
+=== Rubyをインストール
+
+==== Windows 向け
+
+****
+link:https://prog-8.com/docs/ruby-env-win[Rubyの開発環境を用意しよう！（Windows用）]
+****
+==== Mac 向け
+
+Mac の場合，PCに標準搭載されていることが多いです．記事の初めにその確認を行うので，そこで確認できれば，それ以上記事を読む必要はありません．
+
+****
+link:https://prog-8.com/docs/ruby-env[Rubyの開発環境を用意しよう！]
+****
+
+== このページで行ったことの確認
+
+最後に，このページで行ったことの確認として，VSCodeでRubyを操作してみます．
+
+一度コマンドプロンプトやターミナルを閉じ，再度VSCodeを起動してください．
+
+VSCodeを開いた状態で，`Ctrl + "@"` か `cmd + j` を押して，ターミナルを起動します．
+
+VSCodeで `ターミナル > 新しいターミナル` を選択しても同じ操作が可能です．
+
+コンソール（画面下に開いた画面）で，
+
+[source, bash]
+-------------------
+gem install bundler
+-------------------
+
+
+と入力します．
+
+コンソールに，
+
+[source, bash]
+-------------------
+1 gem installed
+-------------------
+
+と表示されれば，無事にRubyがインストールされています．
+
+ちなみに**gem** とは，Rubyのライブラリ（便利なツールのセット）のことです．
+
+ライブラリが問題なくインストールできればRubyは無事にインストールされていることになります．
+
+後で使うので，ここで確認もかねてインストールしました．
+
+=== まとめ
+
+* Visual Studio Code をインストールした．
+* Git をインストールした．
+* Ruby をインストールした．
+
+次は，GitHubの登録，gitの設定などを行います．
+
+****
+link:./general-succeeding-github[GitHubへの登録]
+****

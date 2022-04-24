@@ -2,7 +2,7 @@
 :page-author: shiba
 :page-layout: post
 :page-categories:  [ "テクノロジー"]
-:page-tags: ["featured", "VSCode", "LaTeX"]
+:page-tags: ["featured", "VSCode", "LaTeX", "テクノロジー"]
 :page-image: assets/images/cloud-latex-header.png
 :page-permalink: Articles/link-to-cloud-latex
 :dummy: {counter2:section:0}

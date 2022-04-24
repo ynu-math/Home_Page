@@ -1,0 +1,91 @@
+= コミット，プッシュ，プルリクエスト
+:page-author: shiba
+:page-layout: post
+:page-categories:  ["引継ぎ資料", "テクノロジー"]
+:page-tags: ["GitHub"]
+:page-image: ../assets/images/General/github.png
+:page-permalink: General/general-succeeding-editing
+:sectnums:
+:sectnumlevels: 2
+:dummy: {counter2:section:0}
+
+※この記事は執筆途中です．
+
+== 前提と確認
+
+=== 前提
+
+* Visual Studio Code がインストールされている．
+* Git がインストールされている
+* Ruby がインストールされている． 
+* GitHub へ登録している．
+* sshkey を設定してGitHubと通信できる．
+* このサイトのリポジトリを Fork した自分のリモートリポジトリがある．
+* リモートリポジトリを ssh で clone したローカルリポジトリがある．
+
+=== 確認
+
+このページでやることは次の通りです．
+
+* このサイトをローカルでプレビューする．
+* サイトのファイルを一部変更してプッシュする．
+* プルリクエストを送る．
+
+== 記事をローカルで表示してみる
+
+=== プレビューに必要な gem をインストール
+
+VSCode で `Home_Page` というフォルダを開きます．
+
+同じフォルダ内に， `Gemfile` というファイルがあることを確認してください．
+
+VSCode のターミナルで，
+
+[source, bash]
+-------------------
+bundle install --full-index
+-------------------
+
+と入力します．
+
+ここで重要なのは，同じフォルダ内に `Gemfile` があることです．
+
+=== jekyll を実行
+
+次に，VSCode のターミナルで，
+[source, bash]
+-------------------
+bundle exec jekyll serve --trace --future --watch
+-------------------
+
+と入力し，link:http://localhost:4000[http://localhost:4000] に接続します．
+
+セキュリティに関する注意が出たら，`allow access` を選択してください．
+
+終了する時は，ターミナルで `Ctrl + C` を入力します．
+
+
+== ファイルの編集
+
+image:../assets/images/General/editing/authors.png[]
+
+`Home_Page` フォルダ内の， `config.yml` ファイルを開いてください．
+
+`authors` の下に，上画像のように6行(名前，name, ... , twitter)追加します．を
+
+上画像の，[red]#赤下線部分# に自分を示す英単語列，[blue]#青下線部分# に自分の苗字を入力してください．
+
+この単語列は，記事を書く際に，著者を表す定数となります．
+
+== コミット
+
+以上のようにファイルを編集すると， VSCode のサイドバーに，
+
+gitの拡張機能をサイドバーに登録
+
++ボタンで add, メッセージを確認してコミット
+
+git push
+
+== プルリクエストを送る
+

@@ -4,7 +4,7 @@
 :page-categories:  [ "サークル全体"]
 :page-tags: ["議事録"]
 :page-image: assets/images/logo.jpg
-:page-permalink: General/meeting-04
+:page-permalink: General/policy-2021
 :sectnums:
 :sectnumlevels: 2
 :dummy: {counter2:section:0}
