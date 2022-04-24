@@ -42,10 +42,11 @@ link:/General/general-rule[横浜国立大学数学サークル 会則]
 
 == 引継ぎ資料
 
-=== 全会員向け
+全ての会員::
 
-=== 代表向け
+代表::
+link:/General/general-succeeding-representative[代表の仕事]
 
-=== 総務向け
+総務::
 
-=== HP管理むけ
+HP管理::

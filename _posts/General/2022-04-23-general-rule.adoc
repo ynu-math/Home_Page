@@ -4,7 +4,7 @@
 :page-categories:  [ "引継ぎ資料"]
 :page-tags: ["引継ぎ資料"]
 :page-image: assets/images/logo.jpg
-:page-permalink: General/rule
+:page-permalink: General/general-rule
 :sectnums:
 :sectnumlevels: 2
 :dummy: {counter2:section:0}
