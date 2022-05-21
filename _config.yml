@@ -25,21 +25,30 @@ asciidoctor:
   - stem
 
 authors:
-    shiba:
-      name:           福田
-      site:           
-      avatar:         /assets/images/shiba-dog-leo.jpg
-      bio:            ""
-      email:          shiba.dog.leo.private@gmail.com
-      twitter: 
-    zab:
-      name:           zab
-      site:           
-      avatar:         /assets/images/zab.jpg
-      bio:            ""
-      email:          
-      twitter:        
-
+  shiba:
+    name:           福田
+    avatar:         
+    bio:            ""
+    email:          shiba.dog.leo.private@gmail.com
+    twitter: 
+  zab:
+    name:           中野
+    avatar:         /assets/images/zab.jpg
+    bio:            ""
+    email:          
+    twitter: 
+  orange:
+    name:           宮崎
+    avatar:         
+    bio:            ""
+    email:          
+    twitter: 
+ night:
+    name:           内藤
+    avatar:         
+    bio:            ""
+    email:          
+    twitter:
 # Defaults
 defaults:
 

@@ -1,0 +1,58 @@
+= Dockerによるローカルプレビュー
+:page-author: shiba
+:page-layout: post
+:page-categories:  ["引継ぎ資料", "テクノロジー"]
+:page-tags: ["Docker"]
+:page-image: ../assets/images/General/docker.png
+:page-permalink: General/general-succeeding-docker
+:sectnums:
+:sectnumlevels: 2
+:dummy: {counter2:section:0}
+
+※この記事は執筆途中です．
+
+== 前提と確認
+
+=== 前提
+
+* VSCode がインストールされている．
+* git がインストールされている．
+* GitHubのアカウントを持っている．
+* このサイトのリポジトリをForkし，自分のマシンにcloneしている．
+
+=== 確認
+
+* Dockerのインストール
+* WSLのインストール
+* github
+
+
+== Dockerのインストール
+
+[#github, cols="1a,5a", grid='',]
+|===
+
+|link:https://docs.docker.com/get-docker/[image:../assets/images/General/docker.png[]]
+|link:https://docs.docker.com/get-docker/[Docker]::
+コンテナ技術を用いてアプリケーションを開発するためのソフトウェアです．
+
+
+|===  
+
+
+VSCodeのコマンドプロンプトで wsl --install Ubuntuを実行
+UNIXユーザー名とパスワードを設定
+Docker desktop をインストール
+Docker Settings > Resources > WSL integration Ubuntu Apply & Restart
+sudo apt update && sudo apt upgrade && sudo apt install -y build-essential && sudo apt install -y curl
+-> さっきのパスワードを入力
+sudo apt install git && git --version
+->既にgitが入っていればすぐに終わる．
+exit
+
+もしくは
+docker compose up で記事をローカル表示
+http://localhost:4000に接続
+Ctrl + C で終了
+
+bundle exec で実行すると，ファイル変更がすぐに反映される

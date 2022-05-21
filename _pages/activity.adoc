@@ -6,7 +6,7 @@
 :page-image: assets/images/logo.png
 :page-permalink: activity
 
-[#activity, cols="1a,5a", grid='',]
+[#activity-t0, cols="1a,5a", grid='',]
 |===
 
 |link:/General/meeting-01[image:./assets/images/logo.jpg[]]
@@ -17,10 +17,13 @@
 
 == 進行中の活動
 
-[#activity, cols="1a,5a", grid='',]
+[#activity-t1, cols="1a,5a", grid='',]
 |===
 
-
+|link:Analysis_I_2022/meeting-01[image:./assets/images/Analysis_I_2022/Analysis_I.jpg[]]
+|link:Analysis_I_2022/meeting-01[解析入門 I ゼミ]::
+杉浦光夫著『線型代数入門』の輪読ゼミです． +
+学部1年生向け．毎週土曜日に行っています．
 
 
 |link:Linear_Algebra_2021/seminar-01[image:./assets/images/Linear_Algebra.png[]]
@@ -28,11 +31,12 @@
 松坂和夫著『線型代数入門』の輪読ゼミです． +
 学部2年生向け．東京都立大の有志学生と共同で行っています．
 
+
 |===
 
 == 終了した活動
 
-[#activity, cols="1a,5a", grid='',]
+[#activity-t2, cols="1a,5a", grid='',]
 |===
 |link:Analysis_II_2021/meeting-01/meeting-01[image:./assets/images/Analysis_II.png[]]
 |link:Analysis_II_2021/meeting-01/meeting-01[解析入門 中 ゼミ]::

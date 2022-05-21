@@ -1,0 +1,165 @@
+= GitHubへの登録
+:page-author: shiba
+:page-layout: post
+:page-categories:  ["引継ぎ資料", "テクノロジー"]
+:page-tags: ["GitHub"]
+:page-image: ../assets/images/General/github.png
+:page-permalink: General/general-succeeding-github
+:sectnums:
+:sectnumlevels: 2
+:dummy: {counter2:section:0}
+
+※この記事は執筆途中です．
+
+== 前提と確認
+
+=== 前提
+
+* Visual Studio Code がインストールされている．
+* Git がインストールされている
+* Ruby がインストールされている． 
+
+=== 確認
+
+このページでやることは次の通りです．
+
+* GitHub へ登録する．
+* sshkey を設定してGitHubと通信できるようにする．
+* このサイトのリポジトリをForkして自分のリモートリポジトリを作る．
+* リモートリポジトリをクローンしてローカルリポジトリを作る．
+
+== GitHubへの登録
+
+このホームページの本体部分はGitHub上のリポジトリ（Gitによって管理されているフォルダのこと）です．
+
+記事を追加することは，このリポジトリにファイルを追加する事です．
+
+[#github, cols="1a,5a", grid='',]
+|===
+
+|link:https://github.com/join[image:../assets/images/General/github.png[]]
+|link:https://github.com/join[GitHub]::
+リポジトリ（Git で管理されるファイルのこと）を公開し，チームで開発するためのウェブサービスです．
+
+|===  
+
+下記を参考に，GitHubへ登録してください．
+
+登録は無料です．
+
+大学が提供するメールアドレスではなく，gmailアカウントで利用することをお勧めします．
+
+****
+link:https://qiita.com/ayatokura/items/9eabb7ae20752e6dc79d[GitHubアカウントの作成方法 (2021年版)]
+****
+
+== sshkeyの設定
+
+下記を参考に，githubへsshkeyを登録してください．
+
+記事中のコマンドは，VSCode のターミナルで実行します．
+
+****
+link:https://qiita.com/shizuma/items/2b2f873a0034839e47ce[GitHubでssh接続する手順  ～公開鍵・秘密鍵の生成から～ ]
+****
+
+上記でわからなければ，次の記事でより詳しく解説しています．
+
+****
+link:https://blog.cloud-acct.com/posts/u-github-ssh/[【GitHub】秘密鍵の生成・公開鍵を追加・SSH接続するまでを画像で分かりやすく]
+****
+
+他にも同じような解説記事があるので，ググってみてください．
+
+== Fork
+
+image:../assets/images/General/github/fork.png[]
+
+link:https://github.com/ynu-math/Home_Page[このサイトのGitHubリポジトリ]へアクセスし，Forkボタンを押します．
+
+Forkボタンを押すと，自分のGitHubページにリポジトリが追加されます．
+
+このリポジトリが，自分のリモートリポジトリです．
+
+image:../assets/images/General/github/code.png[]
+
+[red]#自分のリポジトリに移り#，Codeボタンからssh接続のためのアドレスを取得します．
+
+
+== フォルダ作成
+
+適当な場所（デスクトップなど）に `YNUMATH` のようなフォルダを作成し，VSCodeで開きます．
+
+これは，このサイトのファイル群をおくためのフォルダです．
+
+VSCode を開き，`Ctrl + K, Ctrl + O` で先ほど作成したフォルダを選択します．
+
+VSCodeで `ファイル > フォルダを開く` を選択しても同じ操作が可能です．
+
+== clone 
+
+VSCode を開き，`Ctrl + "@"` か `cmd + j` で VSCode のターミナルを呼び出します．
+
+VSCodeで `ターミナル > 新しいターミナル` を選択しても同じ操作が可能です．
+
+
+ターミナルで，
+
+[source, bash]
+-------------------
+git clone <さっきコピーしたアドレス>
+-------------------
+
+と入力し，Enterを押します．
+
+ここでsshのパスワードを要求されるので，上で設定したパスワードを入力します．
+
+以上で，自分のPCにリポジトリをクローン（コピーのこと）しました．
+
+このリポジトリが，ローカルリポジトリです．
+
+`Home_Page` というフォルダが作成されるので，
+
+[source, bash]
+-------------------
+cd Home_Page
+-------------------
+
+と入力し，フォルダを移動します．
+
+== gitの初期設定
+
+`Home_Page` というフォルダを開いた状態で，
+
+[source, bash]
+-------------------
+git config --local user.name "<githubのユーザーネーム>"
+git config --local user.email "<githubのメールアドレス>"
+git config --global color.ui auto
+-------------------
+
+と入力し，gitの初期設定を行います．
+
+`<githubのユーザーネーム>, <githubのメールアドレス>` の部分は，自分のユーザーネームとメールアドレスを入力してください．
+
+これで，変更履歴をあなたのものとしてコミット（gitに記録）できるようになります．
+
+== このページで行ったことの確認
+
+以上の操作で，あなたのPC上に， `YNUMATH` というフォルダがあり，
+
+その中に `Home_Page` というフォルダがあるはずです．
+
+
+=== まとめ
+
+* GitHub へ登録する．
+* sshkey を設定してGitHubと通信できるようにする．
+* このサイトのリポジトリをForkして自分のリモートリポジトリを作る．
+* リモートリポジトリをクローンしてローカルリポジトリを作る．
+
+
+次はローカルリポジトリに変更を加え，それをリモートリポジトリに反映させます．
+****
+link:./general-succeeding-editing[プレビュー，コミット，プッシュ]
+****

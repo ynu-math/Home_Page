@@ -1,7 +1,7 @@
 = ゼミ第3回
 :page-author: shiba
 :page-layout: post
-:page-categories:  [ "Linear_Algebra_2021"]
+:page-categories:  [ "松坂線型 2021"]
 :page-tags: ["議事録"]
 :page-image: assets/images/Linear_Algebra.png
 :page-permalink: Linear_Algebra_2021/seminar-03

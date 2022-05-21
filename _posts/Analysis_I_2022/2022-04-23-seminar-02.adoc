@@ -1,0 +1,51 @@
+= ゼミ第2回
+:page-author: shiba
+:page-layout: post
+:page-categories:  [ "杉浦解析 I 2022"]
+:page-tags: ["議事録"]
+:page-image:  assets/images/Analysis_I_2022/seminar-02.png
+:page-permalink: Analysis_I_2022/seminar-02
+:sectnums:
+:sectnumlevels: 2
+:dummy: {counter2:section:0}
+
+== 時間
+:dummy: {counter2:section}
+:num: 0
+
+17:00-22:00
+
+== 参加者
+:dummy: {counter2:section}
+:num: 0
+
+伊達，内藤，小島，永作，坂本，福田，山城
+
+== 内容
+:dummy: {counter2:section}
+:num: 0
+
+発表者::
+内藤
+
+範囲::
+第1章 2節
+
+内容::
+実数列の極限
+
+== 話し合い
+
+* \(\epsilon-N\) 論法では\(n_0\)を明示してみよう．
+
+
+== 次回の範囲
+
+発表者::
+小島
+
+範囲::
+第1章 3節
+
+内容::
+* 実数の連続性

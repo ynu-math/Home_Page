@@ -35,3 +35,18 @@
 * 3年生：2人
 * 2年生：2人
 * 1年生：6人
+
+== 会則
+
+link:/General/general-rule[横浜国立大学数学サークル 会則]
+
+== 引継ぎ資料
+
+全ての会員::
+
+代表::
+link:/General/general-succeeding-representative[代表の仕事]
+
+総務::
+
+HP管理::

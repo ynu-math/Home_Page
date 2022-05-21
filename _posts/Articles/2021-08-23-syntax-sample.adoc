@@ -1,7 +1,7 @@
 = Asciidoc 構文解説
 :page-author: shiba
 :page-layout: post
-:page-categories:  [ "テクノロジー"]
+:page-categories:  ["引継ぎ資料", "テクノロジー"]
 :page-tags: ["featured","Asciidoc"]
 :page-image: assets/images/syntax-sample.png
 :page-permalink: Articles/syntax-sample
@@ -100,7 +100,7 @@
 
 
 :ex-show: 表示例 
-[#ex_show, title='{ex-show}']
+[#ex_show1, title='{ex-show}']
 ****
 インライン数式：\(F = ma\)
 
@@ -149,7 +149,7 @@
 ----
 
 :ex-show: 表示例 
-[#ex_show, title='{ex-show}']
+[#ex_show2, title='{ex-show}']
 ******
 :def-add: 定義 {section}.{counter:num}.
 [#def_add.definition, title='{def-add}']
