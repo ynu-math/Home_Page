@@ -43,7 +43,12 @@ authors:
     bio:            ""
     email:          
     twitter: 
-
+  night:
+     name:           内藤
+     avatar:         
+     bio:            ""
+     email:          
+     twitter:
 # Defaults
 defaults:
 
