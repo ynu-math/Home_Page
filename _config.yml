@@ -43,7 +43,13 @@ authors:
     bio:            ""
     email:          
     twitter: 
-
+      orange:
+  melonmalon:
+    name:           伊達
+    avatar:         
+    bio:            ""
+    email:          
+    twitter:          
 # Defaults
 defaults:
 
