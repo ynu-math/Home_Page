@@ -1,0 +1,140 @@
+= プレビュー，コミット，プッシュ
+:page-author: shiba
+:page-layout: post
+:page-categories:  ["引継ぎ資料", "テクノロジー"]
+:page-tags: ["GitHub"]
+:page-image: ../assets/images/General/github.png
+:page-permalink: General/general-succeeding-editing
+:sectnums:
+:sectnumlevels: 2
+:dummy: {counter2:section:0}
+
+※この記事は執筆途中です．
+
+== 前提と確認
+
+=== 前提
+
+* Visual Studio Code がインストールされている．
+* Git がインストールされている
+* Ruby がインストールされている． 
+* GitHub へ登録している．
+* sshkey を設定してGitHubと通信できる．
+* このサイトのリポジトリを Fork した自分のリモートリポジトリがある．
+* リモートリポジトリを ssh で clone したローカルリポジトリがある．
+
+=== 確認
+
+このページでやることは次の通りです．
+
+* このサイトをローカルでプレビューする．
+* サイトのファイルを一部変更してプッシュする．
+
+== 記事をローカルで表示してみる
+
+=== プレビューに必要な gem をインストール
+
+VSCode で `Home_Page` というフォルダを開きます．
+
+同じフォルダ内に， `Gemfile` というファイルがあることを確認してください．
+
+VSCode のターミナルで，
+
+[source, bash]
+-------------------
+bundle install --full-index
+-------------------
+
+と入力します．
+
+ここで重要なのは，同じフォルダ内に `Gemfile` があることです．
+
+=== jekyll を実行
+
+次に，VSCode のターミナルで，
+[source, bash]
+-------------------
+bundle exec jekyll serve --trace --future --watch
+-------------------
+
+と入力し，link:http://localhost:4000[http://localhost:4000] に接続します．
+
+セキュリティに関する注意が出たら，`allow access` を選択してください．
+
+終了する時は，ターミナルで `Ctrl + C` を入力します．
+
+
+== ファイルの編集
+
+image:../assets/images/General/editing/authors.png[]
+
+`Home_Page` フォルダ内の， `config.yml` ファイルを開いてください．
+
+`authors` の下に，上画像のように6行(名前，name, ... , twitter)追加します．を
+
+上画像の，[red]#赤下線部分# に自分を示す英単語列，[blue]#青下線部分# に自分の苗字を入力してください．
+
+この単語列は，記事を書く際に，著者を表す定数となります．
+
+== コミット
+
+以上のようにファイルを編集すると， VSCode のサイドバーに，
+
+image:../assets/images/General/editing/git-icon.png[]
+
+のようなアイコンが現れます．
+
+ファイルを保存して，ファイル名の右側にある `+` ボタンを押します．
+
+次にメッセージ欄に `authorを追加` などと記入し，
+
+右上のチェックボタンをクリックします．
+
+以上で，コミット（gitへの記録）が完了しました．
+
+以上の操作が実際に何をしているかを意識する必要はありませんが，
+
+気になる人は次の記事を参考にするとよいです．
+
+****
+link:https://miya-system-works.com/blog/detail/vscode-github/[VSCodeでGit・GitHubを使う方法を解説する【初心者向き】]
+****
+
+== プッシュ
+
+ターミナルで
+[source, bash]
+-------------------
+git log
+-------------------
+と入力し，先ほどのコミットが記録されていることを確認してください．
+
+`q` を入力して終了します．
+
+次に，ターミナルで
+[source, bash]
+-------------------
+git push
+-------------------
+
+と入力してください．
+
+パスワードを要求されたら，sshkeyで設定したパスワードを入力してください．
+
+== このページで行ったことの確認
+
+* Home_Page フォルダ内のconfig.yml ファイルを編集した．
+* コミット（変更を記録すること）を行った．
+* push してリモートリポジトリに変更を反映させた．
+
+=== まとめ
+
+* このサイトをローカルでプレビューした．
+* サイトのファイルを一部変更してプッシュした．
+
+
+次はリモートリポジトリの変更を，このサイトのリポジトリに反映させるためのプルリクエストを行います．
+
+****
+link:./general-succeeding-pullrequest[プルリクエスト]
+****

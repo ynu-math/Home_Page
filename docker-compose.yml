@@ -1,7 +1,18 @@
-jekyll:
-    image: jekyll/jekyll:latest
-    command: jekyll serve --force_polling
+version: '3.9'
+
+services:
+  homepage:
+    container_name: homepage
+    stdin_open: true
+    tty: true 
+    build:
+      dockerfile: Dockerfile
+      context: .
     ports:
-        - 4000:4000
+      - '4000:4000'
     volumes:
-        - .:/srv/jekyll
+      - type: bind
+        source: ./
+        target: /Home_Page
+    
+    command: sh -c "cd Home_Page && bundle exec jekyll serve --host 0.0.0.0 --trace --future --watch "

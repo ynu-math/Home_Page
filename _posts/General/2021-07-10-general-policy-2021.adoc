@@ -1,10 +1,10 @@
 = 運営方針議会2021
 :page-author: zab
 :page-layout: post
-:page-categories:  [ "General"]
+:page-categories:  [ "サークル全体"]
 :page-tags: ["議事録"]
 :page-image: assets/images/logo.jpg
-:page-permalink: General/meeting-04
+:page-permalink: General/policy-2021
 :sectnums:
 :sectnumlevels: 2
 :dummy: {counter2:section:0}
