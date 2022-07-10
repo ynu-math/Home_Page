@@ -1,0 +1,54 @@
+= ゼミ第6回
+:page-author: melonmalon
+:page-layout: post
+:page-categories:  [ "杉浦解析 I 2022"]
+:page-tags: ["議事録"]
+:page-image:  assets/images/Analysis_I_2022/seminar-06.jpg
+:page-permalink: Analysis_I_2022/seminar-06
+:sectnums:
+:sectnumlevels: 2
+:dummy: {counter2:section:0}
+
+== 時間
+:dummy: {counter2:section}
+:num: 0
+
+10:00-16:00
+
+== 参加者
+:dummy: {counter2:section}
+:num: 0
+
+香川，永作，内藤，伊達，小島
+
+== 内容
+:dummy: {counter2:section}
+:num: 0
+
+発表者::
+香川
+
+範囲::
+第1章§3コーシー列から終わりの実数の10進数表示まで
+
+内容::
+・nが自然数のとき、n<m<n+1を満たす自然数mの存在について
+二変数(順序はある)の自然数に対する全称命題も数学的帰納法でよい
+
+・実数Rは無限大を含まず、また、自然数nは離散的であり近傍を取れないので、有限の値の自然数nについて、実数列が発散することはない
+
+・sinx(xは実数)の無限積展開およびそれを利用した
+Σ 1/(k^2)=π^2/6 は理解できた
+
+・任意の2つの実数の間の有理数は明示的に示せる
+
+== 次回の範囲
+
+発表者::
+永作
+
+範囲::
+第1章§4
+
+内容::
+*「R^nとC」
