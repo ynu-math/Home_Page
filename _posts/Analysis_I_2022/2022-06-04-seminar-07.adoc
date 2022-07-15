@@ -1,0 +1,57 @@
+= ゼミ第7回
+:page-author: melonmalon
+:page-layout: post
+:page-categories:  [ "杉浦解析 I 2022"]
+:page-tags: ["議事録"]
+:page-image:  assets/images/Analysis_I_2022/seminar-07.jpg
+:page-permalink: Analysis_I_2022/seminar-07
+:sectnums:
+:sectnumlevels: 2
+:dummy: {counter2:section:0}
+
+== 時間
+:dummy: {counter2:section}
+:num: 0
+
+17:00-23:00
+
+== 参加者
+:dummy: {counter2:section}
+:num: 0
+
+永作，内藤，伊達，小島
+
+== 内容
+:dummy: {counter2:section}
+:num: 0
+
+発表者::
+永作
+
+範囲::
+第1章\(\S\)4はじめから定理4.5の証明まで
+
+内容::
+* ユークリッド空間は長さが定義できる集合のこと？
+
+* 単射、全射の証明について
+
+* シュワルツの不等式は余弦定理から出てきたと考えれば自然
+
+* \(\cos z \) が多項式で定義されることについて
+
+* n次元数ベクトルの内積は、定義から自然にΣで書ける
+
+* 極限を取ってる時は、なんの記号(変数)の極限を取ってるのかに注意する
+
+* アフィン空間とベクトル空間が結びつくとはどういうことか？
+
+* 内積空間にはいろいろな内積の種類があり、今回扱ったのは標準内積だった
+
+== 次回の範囲
+
+発表者::
+永作
+
+範囲::
+第1章\(\S\)4
