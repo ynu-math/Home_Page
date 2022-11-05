@@ -9,34 +9,39 @@
 :sectnumlevels: 2
 :dummy: {counter2:section:0}
 
-## 時間
+== 時間
 
 18:00- 20:00
 
-## 参加者
+== 参加者
 
-- zab
-- 柴犬レオ
+. zab
+. 柴犬レオ
 
-## 発表範囲
+== 発表範囲
 
-- 柴犬レオ
+柴犬レオ::
+p.146-155 高階導関数，テイラーの定理の証明のための補題
 
-  p.146-155 高階導関数，テイラーの定理の証明のための補題
-
-{% include theorem.html content="
+:prop-c2: 命題
+[#prop-c2.proposition.NoBreak, title='{prop-c2}']
+[[prop-c2, {section}.{num}]]
+****
 \(U \subset \mathbb{R}^2\)とする．関数\(f ~ \colon ~ U \to \mathbb{R}\)に対して\(\dfrac{\partial f}{\partial x_1}, \dfrac{\partial f}{\partial x_2}, \dfrac{\partial^2 f}{\partial x_2 \partial x_1}\)が存在して\(\dfrac{\partial^2 f}{\partial x_2 \partial x_1}\)は点\((a,b) \in U\)において連続であるとする．
 
 このとき点\((a,b) \in U\)において\(\dfrac{\partial^2 f}{\partial x_1 \partial x_2}\)も存在して連続である．
-"%}
+****
 
-$U \subset \mathbb{R}^n$の場合も定理1の証明と同様の方針で示せる．定理1より$C^2$級関数$f~ \colon ~ U \to  \mathbb{R}$は$1 \leq i, j \leq n$を満たす任意の$i,j$について
-$$
-\dfrac{\partial^2 f}{\partial x_i \partial x_j} = \dfrac{\partial^2 f}{\partial x_j \partial x_i}
-$$
+\(U \subset \mathbb{R} ^n\) の場合も定理1の証明と同様の方針で示せる．定理1より \(C^2\) 級関数 \(f~ \colon ~ U \to  \mathbb{R}\) は \(1 \leq i, j \leq n\) を満たす任意の \(i,j\) について
+\begin{align*}
+  \dfrac{\partial^2 f}{\partial x_i \partial x_j} = \dfrac{\partial^2 f}{\partial x_j \partial x_i}
+\end{align*}
 である．
 
-{% include theorem.html content="
+:prop-multi-taylor: 命題
+[#prop-multi-taylor.proposition.NoBreak, title='{prop-multi-taylor}']
+[[prop-multi-taylor, {section}.{num}]]
+****
 \(U \subset \mathbb{R}^n\)とする．関数\(f ~ \colon ~ U \to \mathbb{R}\)が\(C^{r}\)級で，\(h \in U\)に対して直線\(\{a+th | 0 \leq t \leq 1 \}\)が点\(a\)の近傍に含まれるとする．
 \[\notag
     \begin{align*}
@@ -50,16 +55,18 @@ $$
     \end{align*}
 \]
 となる．
-"%}
+****
+
 定理2に1変数の場合のテイラーの定理を適用することで多変数の場合のテイラーの定理を得る．
 
 
-## 次回の範囲
+== 次回の範囲
 
-- 柴犬レオ
-  - 多変数のテイラーの定理(14.2)p155-
+柴犬レオ::
+多変数のテイラーの定理(14.2) +
+p155-
 
-## 連絡
+== 連絡
 
 特になし．
 
