@@ -3232,7 +3232,8 @@ input[type="button"].btn-block {
 
 .nav-link {
   display: block;
-  padding: 0.8rem 1rem; }
+  padding: 0.8rem 1rem;
+  font-family: 'Computer Modern Serif', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
   .nav-link:hover, .nav-link:focus {
     text-decoration: none; }
   .nav-link.disabled {

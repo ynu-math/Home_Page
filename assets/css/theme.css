@@ -7,6 +7,10 @@
 @import url(//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.0/css/font-awesome.css);
 /* normalize.css v2.1.1 | MIT License | git.io/normalize */
 /* 
+
+/* フォントの指定 */
+@import url('https://cdn.jsdelivr.net/gh/aaaakshat/cm-web-fonts@latest/fonts.css'); /* なぜかcomputer modern が使えるようになる https://stackoverflow.com/questions/6476351/how-to-use-the-computer-modern-font-in-webpages */
+@import url('https://jpafonts.osdn.jp/webfonts/jpafonts.css'); /* JPAフォントhttps://jpafonts.osdn.jp/ */
 /* ========================================================================== Tables ========================================================================== */
 /** Remove most spacing between table cells. */
 table { border-collapse: collapse; border-spacing: 0; }
@@ -15,7 +19,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 html, body { font-size: 15px; }
 
-body { background: white; color: #222222; padding: 0; margin: 0; font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; font-weight: normal; font-style: normal; line-height: 1; position: relative; cursor: auto; }
+body { background: white; color: #222222; padding: 0; margin: 0; font-family: 'Computer Modern Serif', 'JPAexMincho', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; font-weight: normal; font-style: normal; line-height: 1; position: relative; cursor: auto; }
 
 a:hover { cursor: pointer; }
 
@@ -64,12 +68,12 @@ a:hover, a:focus { color: #4183c4; }
 a img { border: none; }
 
 /* Default paragraph styles */
-p { font-family: "Hiragino Kaku Gothic ProN",
+p { font-family: 'Computer Modern Serif', 'JPAexMincho', "Hiragino Kaku Gothic ProN",
     "Hiragino Sans", helvetica, arial, freesans, clean, sans-serif; font-weight: normal; font-size: 1em; line-height: 1.4; margin-bottom: 1em; text-rendering: optimizeLegibility; }
 p aside { font-size: 0.93333em; line-height: 1.35; font-style: italic; }
 
 /* Default header styles */
-h1, h2, h3, #toctitle, .sidebarblock > .content > .title, h4, h5, h6 { font-family: helvetica, arial, freesans, clean, sans-serif; font-weight: bold; font-style: normal; color: #333333; text-rendering: optimizeLegibility; margin-top: 0.2em; margin-bottom: 0.5em; line-height: 1.2em; }
+h1, h2, h3, #toctitle, .sidebarblock > .content > .title, h4, h5, h6 { font-family: 'Computer Modern Serif', helvetica, arial, freesans, clean, sans-serif; font-weight: bold; font-style: normal; color: #333333; text-rendering: optimizeLegibility; margin-top: 0.2em; margin-bottom: 0.5em; line-height: 1.2em; }
 h1 small, h2 small, h3 small, #toctitle small, .sidebarblock > .content > .title small, h4 small, h5 small, h6 small { font-size: 60%; color: gray; line-height: 0; }
 
 h1 { font-size: 1.33333em; }
@@ -754,6 +758,7 @@ a.text-dark:hover {
 .navbar {
 	transition:top 0.2s ease-in-out;
 	font-weight:400;
+	font-family: 'Computer Modern Serif', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 .navbar .highlight .nav-link {
 	color:#03a87c !important;
@@ -1235,7 +1240,7 @@ article {
 .article-headline {
 	text-align: center;
 	padding-top: 1rem;
-    font-family: Georgia,Times,"Times New Roman",serif;
+    font-family: 'Computer Modern Serif', 'JPAexMincho', Georgia,Times,"Times New Roman",serif;
     font-size: 3.2rem;
     font-weight: 400;
     line-height: 1.15;
